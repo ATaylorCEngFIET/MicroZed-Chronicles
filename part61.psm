@@ -1,0 +1,117 @@
+NAMEREG s0,phase  ;rename S0 register to led
+
+;as 8 bit processor we need four delay loops 256 * 256 * 256 * 256 = 4294967296 
+																
+CONSTANT max1, 40 ;set delay 
+CONSTANT max2, 00 ;set delay 
+CONSTANT max3, 00 ;set delay 
+CONSTANT max4, 00 ;set delay
+
+CONSTANT max_line1, ff ;set delay 
+CONSTANT max_line2, 07 ;set delay 
+
+
+
+main:	LOAD phase, 00; load the led output register with 00
+		OUTPUT phase,01; output the register 
+		CALL delay_init; wait for the delay 
+		
+		OR phase, 04; set I3 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		OR phase, 08; set I4 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		AND phase, 08; set I3 low keep i4 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		OR phase, 09; set i1 high keep i4 high 
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		OR phase, 0B; set i2 high keep i4 and i1 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		AND phase, 03; clear i4 keep i1 and i2 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		AND phase, 02; clear i1 keep i2 high
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		AND phase, 00; clear all
+		OUTPUT phase,01; output the register
+		CALL delay_init; wait for the delay
+		
+		CALL delay_line; 
+		
+		JUMP main; loop back to beginning
+
+delay_init: LOAD s4, max4;
+			LOAD s3, max3;
+			LOAD s2, max2;
+			LOAD s1, max1;
+
+delay_loop:	SUB s1, 1'd; subtract 1 decimal from s1
+			SUBCY s2, 0'd; carry subtraction 
+			SUBCY s3, 0'd; carry subtraction
+			SUBCY s4, 0'd; carry subtraction 
+			JUMP NZ, delay_loop;
+			RETURN 
+
+delay_line: LOAD s2, max_line2;
+			LOAD s1, max_line1;			
+line_loop:	SUB s1, 1'd; subtract 1 decimal from s1
+			SUBCY s2, 0'd; carry subtraction 
+			
+			OR phase, 10;
+			OUTPUT phase,01; output the register
+			OR phase, 10;
+			OUTPUT phase,01; output the register
+			OR phase, 10;
+			OUTPUT phase,01; output the register
+			OR phase, 10;
+			OUTPUT phase,01; output the register
+			AND phase,30;
+			OUTPUT phase,01; output the register	
+			AND phase,20;
+			OUTPUT phase,01; output the register
+			OR phase, 20;
+			OUTPUT phase,01; output the register
+			OR phase, a0;
+			OUTPUT phase,01; output the register
+			OR phase, a0;
+			OUTPUT phase,01; output the register
+			OR phase, 20;
+			OUTPUT phase,01; output the register
+			OR phase, 20;
+			OUTPUT phase,01; output the register
+			AND phase, 60;
+			OUTPUT phase,01; output the register
+			
+			AND phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			OR phase, 40;
+			OUTPUT phase,01; output the register
+			AND phase, 00;
+			OUTPUT phase,01; output the register
+			JUMP NZ, line_loop;
+			RETURN 			
+
