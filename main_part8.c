@@ -76,11 +76,11 @@ int main()
      XAdcPs_SetAlarmEnables(XADCInstPtr, 0x0);
 
      //configure sequencer to just sample internal on chip parameters
-     XAdcPs_SetSeqInputMode(XADCInstPtr, XADCPS_SEQ_MODE_SAFE);
+     XAdcPs_SetSequencerMode(XADCInstPtr, XADCPS_SEQ_MODE_SAFE);
 
      //configure the channel enables we want to monitor
-     XAdcPs_SetSeqChEnables(XADCInstPtr,XADCPS_CH_TEMP|XADCPS_CH_VCCINT|XADCPS_CH_VCCAUX|XADCPS_CH_VBRAM|XADCPS_CH_VCCPINT|
-     		XADCPS_CH_VCCPAUX|XADCPS_CH_VCCPDRO);
+     XAdcPs_SetSeqChEnables(XADCInstPtr,XADCPS_SEQ_CH_TEMP|XADCPS_SEQ_CH_VCCINT|XADCPS_SEQ_CH_VCCAUX|XADCPS_SEQ_CH_VBRAM|XADCPS_SEQ_CH_VCCPINT|
+     		XADCPS_SEQ_CH_VCCPAUX|XADCPS_SEQ_CH_VCCPDRO);
 
      while(1){
      TempRawData = XAdcPs_GetAdcData(XADCInstPtr, XADCPS_CH_TEMP);
