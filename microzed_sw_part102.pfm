@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xd:vendor="xilinx.com" xd:library="xd" xd:name="microzed" xd:version="1.0" xmlns:xd="http://www.xilinx.com/xd" >
+
+    <xd:description>Basic platform targeting the MicroZedBoard, which includes 1 GB of DDR3, 128 Mb QSPI Flash and a MicroSD card interface. More information at http://www.zedboard.org/products/microzed</xd:description>
+
+    <xd:libraryFiles
+      xd:os="standalone"
+      xd:libDir="arm-xilinx-eabi/lib"
+      xd:ldscript="arm-xilinx-eabi/lscript.ld"
+    />
+	
+   <xd:libraryFiles
+      xd:os="freertos"
+      xd:osDepend="standalone"
+      xd:includeDir="/arm-xilinx-eabi/include/freertos"
+      xd:libDir="/arm-xilinx-eabi/lib/freertos"
+      xd:libName="freertos"
+      xd:ldscript="freertos/lscript.ld"
+    />
+
+
+    <xd:bootFiles
+      xd:os="linux"
+      xd:bif="boot/linux.bif"
+      xd:readme="boot/generic.readme"
+      xd:devicetree="boot/devicetree.dtb"
+      xd:linuxImage="boot/uImage"
+      xd:ramdisk="boot/uramdisk.image.gz"
+    />
+
+    <xd:bootFiles
+      xd:os="standalone"
+      xd:bif="boot/standalone.bif"
+      xd:readme="boot/generic.readme"
+    />
+	<xd:bootFiles
+      xd:os="freertos"
+      xd:bif="boot/freertos.bif"
+      xd:readme="boot/generic.readme"
+    />
+
+    <xd:hardware
+      xd:system="prebuilt"
+      xd:bitstream="hardware/prebuilt/bitstream.bit"
+      xd:export="hardware/prebuilt/export"
+      xd:swcf="hardware/prebuilt/swcf"
+      xd:hwcf="hardware/prebuilt/hwcf"
+    />
+  
+</xd:repository>
+
