@@ -1,0 +1,14 @@
+11:42:01 **** Incremental Build of configuration Debug for project ipi_app ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../ipi_app_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:50:
+../../ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make: *** [src/helloworld.o] Error 1
+
+11:42:02 Build Finished (took 419ms)
+

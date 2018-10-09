@@ -1,0 +1,9 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[fsbl_config]a53_x64
+	[bootloader]C:\HDL_projects_git\IPI\IPI.sdk\fsbl\Debug\fsbl.elf
+	[destination_device = pl]C:\HDL_projects_git\IPI\IPI.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+	[destination_cpu = a53-0]C:\HDL_projects_git\IPI\IPI.sdk\app\Debug\app.elf
+	[destination_cpu = r5-0]C:\HDL_projects_git\IPI\IPI.sdk\app_r5\Debug\app_r5.elf
+}

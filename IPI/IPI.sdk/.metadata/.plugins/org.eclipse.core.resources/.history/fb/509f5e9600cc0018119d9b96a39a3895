@@ -1,0 +1,184 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xil_exception.h"
+#include "xil_cache.h"
+#include "xscugic.h"
+#include "xipipsu.h"
+#include "xipipsu_hw.h"
+
+
+/* IPI device ID to use for this test */
+#define TEST_CHANNEL_ID	XPAR_XIPIPSU_0_DEVICE_ID
+/* Test message length in words. Max is 8 words (32 bytes) */
+#define TEST_MSG_LEN	8
+/* Interrupt Controller device ID */
+#define INTC_DEVICE_ID	XPAR_SCUGIC_0_DEVICE_ID
+/* Time out parameter while polling for response */
+#define TIMEOUT_COUNT 10000
+
+XScuGic GicInst;
+XIpiPsu IpiInst;
+
+/* Buffers to store Test Data */
+u32 MsgBuffer[TEST_MSG_LEN];
+
+void IpiIntrHandler(void *XIpiPsuPtr);
+static XStatus SetupInterruptSystem(XScuGic *IntcInstancePtr,XIpiPsu *IpiInstancePtr, u32 IpiIntrId) ;
+static XStatus DoIpiTest(XIpiPsu *InstancePtr);
+static void InvertBuffer(u32 *BufPtr,u32 MsgLen);
+
+int main()
+{
+    init_platform();
+
+	XIpiPsu_Config *CfgPtr;
+
+	int Status = XST_FAILURE;
+	xil_printf("wwww.AdiuvoEngineering.com IPI Example A53/R5 [Build: %s %s]\r\n", __DATE__, __TIME__);
+
+	Xil_DCacheDisable();
+
+	/* Look Up the config data */
+	CfgPtr = XIpiPsu_LookupConfig(TEST_CHANNEL_ID);
+
+	/* Init with the Cfg Data */
+	XIpiPsu_CfgInitialize(&IpiInst, CfgPtr, CfgPtr->BaseAddress);
+
+	/* Setup the GIC */
+	SetupInterruptSystem(&GicInst, &IpiInst, (IpiInst.Config.IntId));
+
+	/* Enable reception of IPIs from all CPUs */
+	XIpiPsu_InterruptEnable(&IpiInst, XIPIPSU_ALL_MASK);
+
+	/* Clear Any existing Interrupts */
+	XIpiPsu_ClearInterruptStatus(&IpiInst, XIPIPSU_ALL_MASK);
+
+	/* Call the test routine */
+	Status = DoIpiTest(&IpiInst);
+
+	/* Print the test result */
+	if (XST_SUCCESS == Status) {
+		xil_printf("Test Completed Pass\r\n");
+	} else {
+		xil_printf("Test Completed Failed\r\n");
+	}
+
+	do {
+		/**
+		 * Do Nothing
+		 * We need to loop on to receive IPIs and respond to them
+		 */
+		__asm("wfi");
+	} while (1);
+    cleanup_platform();
+    return 0;
+}
+
+
+static XStatus SetupInterruptSystem(XScuGic *IntcInstancePtr,XIpiPsu *IpiInstancePtr, u32 IpiIntrId)
+{
+	u32 Status = 0;
+	XScuGic_Config *IntcConfig; /* Config for interrupt controller */
+
+	/* Initialize the interrupt controller driver */
+	IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+	if (NULL == IntcConfig) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_CfgInitialize(&GicInst, IntcConfig,
+			IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/*
+	 * Connect the interrupt controller interrupt handler to the
+	 * hardware interrupt handling logic in the processor.
+	 */
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+			(Xil_ExceptionHandler) XScuGic_InterruptHandler, IntcInstancePtr);
+
+	/*
+	 * Connect a device driver handler that will be called when an
+	 * interrupt for the device occurs, the device driver handler
+	 * performs the specific interrupt processing for the device
+	 */
+//	 xil_printf("Interrupt ID: %d\r\n",IpiIntrId);
+//	Status = XScuGic_Connect(IntcInstancePtr, IpiIntrId,
+//			(Xil_InterruptHandler) IpiIntrHandler, (void *) IpiInstancePtr);
+
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	/* Enable the interrupt for the device */
+	XScuGic_Enable(IntcInstancePtr, IpiIntrId);
+
+	/* Enable interrupts */
+	Xil_ExceptionEnable();
+
+	return XST_SUCCESS;
+}
+
+static XStatus DoIpiTest(XIpiPsu *InstancePtr)
+{
+
+	u32 Index;
+	u32 Status;
+
+	u32 TmpBuffer[TEST_MSG_LEN] = { 0 };
+
+	XIpiPsu_Config *DestCfgPtr;
+	DestCfgPtr = XIpiPsu_LookupConfig(TEST_CHANNEL_ID);
+
+	//xil_printf("Message Content A53:\r\n");
+	for (Index = 0; Index < TEST_MSG_LEN; Index++) {
+		MsgBuffer[Index] = 0x55555555;
+	}
+
+	/**
+	 * Send a Message to TEST_TARGET and WAIT for ACK
+	 */
+	XIpiPsu_WriteMessage(InstancePtr, XPAR_XIPIPS_TARGET_PSU_CORTEXR5_0_CH0_MASK, MsgBuffer,
+			TEST_MSG_LEN,
+			XIPIPSU_BUF_TYPE_MSG);
+	xil_printf("Triggering IPI and Waiting for Response...\r\n");
+	XIpiPsu_TriggerIpi(InstancePtr, XPAR_XIPIPS_TARGET_PSU_CORTEXR5_0_CH0_MASK);
+	Status = XIpiPsu_PollForAck(InstancePtr, XPAR_XIPIPS_TARGET_PSU_CORTEXR5_0_CH0_MASK,
+			TIMEOUT_COUNT);
+
+	if (XST_SUCCESS == Status) {
+
+		xil_printf("Received response from R5.\r\n");
+		/**
+		 * Read the Response buffer
+		 */
+		XIpiPsu_ReadMessage(InstancePtr, XPAR_XIPIPS_TARGET_PSU_CORTEXR5_0_CH0_MASK, TmpBuffer,
+		TEST_MSG_LEN, XIPIPSU_BUF_TYPE_RESP);
+		/**
+		 * Set the Status to SUCCESS; Status will be set to FAILURE incase the check fails
+		 * in the consequent code
+		 */
+		Status = XST_SUCCESS;
+		/*
+		 * Check if RESPONSE == (~MSG)
+		 */
+		xil_printf("Message : Response\r\n");
+
+		for (Index = 0; Index < TEST_MSG_LEN; Index++) {
+			xil_printf("W%d -> 0x%08x : 0x%08x\r\n", Index, MsgBuffer[Index],
+					TmpBuffer[Index]);
+		}
+
+	} else {
+		xil_printf("Error: Timed Out polling for response\r\n");
+	}
+
+	return Status;
+}
+
+

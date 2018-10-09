@@ -1,0 +1,2674 @@
+11:38:59 **** Build of project ipi_app_bsp ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/avbuf_v2_2/src"
+make -C psu_cortexa53_0/libsrc/avbuf_v2_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_6/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_2/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/dpdma_v1_1/src"
+make -C psu_cortexa53_0/libsrc/dpdma_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_3/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_3/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/libmetal_v1_4/src"
+make -C psu_cortexa53_0/libsrc/libmetal_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_5/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v3_9/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_5/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/spips_v3_1/src"
+make -C psu_cortexa53_0/libsrc/spips_v3_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v6_7/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/video_common_v4_4/src"
+make -C psu_cortexa53_0/libsrc/video_common_v4_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/wdtps_v3_0/src"
+make -C psu_cortexa53_0/libsrc/wdtps_v3_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/xilfpga_v4_1/src"
+make -C psu_cortexa53_0/libsrc/xilfpga_v4_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_5/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/avbuf_v2_2/src"
+make -C psu_cortexa53_0/libsrc/avbuf_v2_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling avbuf"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xavbuf_hw.h:61,
+                 from xavbuf.h:62,
+                 from xavbuf.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xavbuf.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xavbuf_hw.h:61,
+                 from xavbuf_clk.h:57,
+                 from xavbuf_clk.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xavbuf_clk.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xavbuf_hw.h:61,
+                 from xavbuf.h:62,
+                 from xavbuf_videoformats.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xavbuf_videoformats.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/avbuf_v2_2/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_6/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xaxipmon_hw.h:96,
+                 from xaxipmon.h:279,
+                 from xaxipmon.c:129:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xaxipmon.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xaxipmon_hw.h:96,
+                 from xaxipmon.h:279,
+                 from xaxipmon_g.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xaxipmon_g.c:61:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xaxipmon_g.c:77:38: error: 'XPAR_XAXIPMON_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XAxiPmon_Config XAxiPmon_ConfigTable[XPAR_XAXIPMON_NUM_INSTANCES] =
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      XPAR_XADCPS_NUM_INSTANCES
+xaxipmon_g.c:80:3: error: 'XPAR_AXI_PERF_MON_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   XPAR_AXI_PERF_MON_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_DEVICE_ID
+xaxipmon_g.c:81:3: error: 'XPAR_AXI_PERF_MON_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_AXI_PERF_MON_0_DEVICE_ID'?
+   XPAR_AXI_PERF_MON_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_AXI_PERF_MON_0_DEVICE_ID
+xaxipmon_g.c:82:3: error: 'XPAR_AXI_PERF_MON_0_GLOBAL_COUNT_WIDTH' undeclared here (not in a function); did you mean 'XPAR_AXI_PERF_MON_0_DEVICE_ID'?
+   XPAR_AXI_PERF_MON_0_GLOBAL_COUNT_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_AXI_PERF_MON_0_DEVICE_ID
+xaxipmon_g.c:83:3: error: 'XPAR_AXI_PERF_MON_0_METRICS_SAMPLE_COUNT_WIDTH' undeclared here (not in a function); did you mean 'XPAR_AXI_PERF_MON_0_GLOBAL_COUNT_WIDTH'?
+   XPAR_AXI_PERF_MON_0_METRICS_SAMPLE_COUNT_WIDTH
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_AXI_PERF_MON_0_GLOBAL_COUNT_WIDTH
+make[1]: *** [xaxipmon_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xaxipmon_hw.h:96,
+                 from xaxipmon.h:279,
+                 from xaxipmon_selftest.c:62:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xaxipmon_selftest.o] Error 1
+In file included from xaxipmon_sinit.c:59:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xaxipmon_hw.h:96,
+                 from xaxipmon.h:279,
+                 from xaxipmon_sinit.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xaxipmon_sinit.c: In function 'XAxiPmon_LookupConfig':
+xaxipmon_sinit.c:95:30: error: 'XPAR_XAXIPMON_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+  for (Index=0U; Index < (u32)XPAR_XAXIPMON_NUM_INSTANCES; Index++) {
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                              XPAR_XADCPS_NUM_INSTANCES
+xaxipmon_sinit.c:95:30: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xaxipmon_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/axipmon_v6_6/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_2/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xcsudma_hw.h:62,
+                 from xcsudma.h:123,
+                 from xcsudma.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xcsudma.o] Error 1
+In file included from xcsudma_g.c:33:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xcsudma_hw.h:62,
+                 from xcsudma.h:123,
+                 from xcsudma_g.c:34:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xcsudma_g.c:43:3: error: 'XPAR_PSU_CSUDMA_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_SCUWDT_DEVICE_ID'?
+   XPAR_PSU_CSUDMA_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_SCUWDT_DEVICE_ID
+xcsudma_g.c:44:3: error: 'XPAR_PSU_CSUDMA_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_CSUDMA_INTR'?
+   XPAR_PSU_CSUDMA_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_CSUDMA_INTR
+make[1]: *** [xcsudma_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xcsudma_hw.h:62,
+                 from xcsudma.h:123,
+                 from xcsudma_intr.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xcsudma_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xcsudma_hw.h:62,
+                 from xcsudma.h:123,
+                 from xcsudma_selftest.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xcsudma_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xcsudma_hw.h:62,
+                 from xcsudma.h:123,
+                 from xcsudma_sinit.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xcsudma_sinit.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xcsudma_sinit.c: In function 'XCsuDma_LookupConfig':
+xcsudma_sinit.c:92:44: error: 'XPAR_XCSUDMA_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_NUM_INSTANCES'?
+  extern XCsuDma_Config XCsuDma_ConfigTable[XPAR_XCSUDMA_NUM_INSTANCES];
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                            XPAR_SCUGIC_NUM_INSTANCES
+xcsudma_sinit.c:92:44: note: each undeclared identifier is reported only once for each function it appears in
+xcsudma_sinit.c:92:24: warning: unused variable 'XCsuDma_ConfigTable' [-Wunused-variable]
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+  extern XCsuDma_Config XCsuDma_ConfigTable[XPAR_XCSUDMA_NUM_INSTANCES];
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+                        ^~~~~~~~~~~~~~~~~~~
+make[1]: *** [xcsudma_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/csudma_v1_2/src/make.libs] Error 2
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/dpdma_v1_1/src"
+make -C psu_cortexa53_0/libsrc/dpdma_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling dpdma"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xdpdma_hw.h:65,
+                 from xdpdma.h:63,
+                 from xdpdma.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xdpdma.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xdpdma_hw.h:65,
+                 from xdpdma.h:63,
+                 from xdpdma_intr.c:52:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xdpdma_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xdpdma_hw.h:65,
+                 from xdpdma.h:63,
+                 from xdpdma_sinit.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xdpdma_sinit.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xdpdma_sinit.c:64:41: error: 'XPAR_XDPDMA_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XDpDma_Config XDpDma_ConfigTable[XPAR_XDPDMA_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                         XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xdpdma_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/dpdma_v1_1/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_3/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops.h:123,
+                 from xgpiops.c:62:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xgpiops.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops.h:123,
+                 from xgpiops_g.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xgpiops_g.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xgpiops_g.c:72:36: error: 'XPAR_XGPIOPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XGpioPs_Config XGpioPs_ConfigTable[XPAR_XGPIOPS_NUM_INSTANCES] = {
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XPAR_XADCPS_NUM_INSTANCES
+xgpiops_g.c:74:8: error: 'XPAR_XGPIOPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XGPIOPS_0_DEVICE_ID, /* Unique ID of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xgpiops_g.c:75:8: error: 'XPAR_XGPIOPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XGPIOPS_0_BASEADDR  /* Base address of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+make[1]: *** [xgpiops_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops_hw.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xgpiops_hw.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops.h:123,
+                 from xgpiops_intr.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xgpiops_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops.h:123,
+                 from xgpiops_selftest.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xgpiops_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xgpiops_hw.h:67,
+                 from xgpiops.h:123,
+                 from xgpiops_sinit.c:58:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xgpiops_sinit.c:59:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xgpiops_sinit.c:70:43: error: 'XPAR_XGPIOPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XGpioPs_Config XGpioPs_ConfigTable[XPAR_XGPIOPS_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xgpiops_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/gpiops_v3_3/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps.c:65:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_g.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xiicps_g.c:57:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xiicps_g.c:77:34: error: 'XPAR_XIICPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XIicPs_Config XIicPs_ConfigTable[XPAR_XIICPS_NUM_INSTANCES] = {
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                  XPAR_XADCPS_NUM_INSTANCES
+xiicps_g.c:79:9: error: 'XPAR_XIICPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+    (u16)XPAR_XIICPS_0_DEVICE_ID, /* Device ID for instance */
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         XPAR_XADCPS_0_DEVICE_ID
+xiicps_g.c:80:9: error: 'XPAR_XIICPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+    (u32)XPAR_XIICPS_0_BASEADDR,  /* Device base address */
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XPAR_XADCPS_0_BASEADDR
+xiicps_g.c:81:9: error: 'XPAR_XIICPS_0_I2C_CLK_FREQ_HZ' undeclared here (not in a function); did you mean 'XPAR_PSU_PSS_REF_CLK_FREQ_HZ'?
+    (u32)XPAR_XIICPS_0_I2C_CLK_FREQ_HZ  /* Device input clock frequency */
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         XPAR_PSU_PSS_REF_CLK_FREQ_HZ
+make[1]: *** [xiicps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps_hw.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_hw.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_intr.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_master.c:74:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_master.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_options.c:66:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_options.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_selftest.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_selftest.o] Error 1
+In file included from xiicps_sinit.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_sinit.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xiicps_sinit.c:70:41: error: 'XPAR_XIICPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XIicPs_Config XIicPs_ConfigTable[XPAR_XIICPS_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                         XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xiicps_sinit.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xiicps_hw.h:66,
+                 from xiicps.h:208,
+                 from xiicps_slave.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_3/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xiicps_slave.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/iicps_v3_7/src/make.libs] Error 2
+"Compiling ipipsu"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xipipsu.h:104,
+                 from xipipsu.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xipipsu.h:106:0,
+                 from xipipsu.c:57:
+xipipsu_hw.h:66:29: error: 'XPAR_XIPIPSU_NUM_TARGETS' undeclared here (not in a function); did you mean 'XIPIPSU_MAX_TARGETS'?
+ #define XIPIPSU_MAX_TARGETS XPAR_XIPIPSU_NUM_TARGETS
+                             ^
+xipipsu.h:131:28: note: in expansion of macro 'XIPIPSU_MAX_TARGETS'
+  XIpiPsu_Target TargetList[XIPIPSU_MAX_TARGETS] ; /** < List of IPI Targets */
+                            ^~~~~~~~~~~~~~~~~~~
+xipipsu.c:61:43: error: 'XPAR_XIPIPSU_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XIpiPsu_Config XIpiPsu_ConfigTable[XPAR_XIPIPSU_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xipipsu.o] Error 1
+In file included from xipipsu_g.c:33:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xipipsu.h:104,
+                 from xipipsu_g.c:34:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xipipsu.h:106:0,
+                 from xipipsu_g.c:34:
+xipipsu_hw.h:66:29: error: 'XPAR_XIPIPSU_NUM_TARGETS' undeclared here (not in a function); did you mean 'XIPIPSU_MAX_TARGETS'?
+ #define XIPIPSU_MAX_TARGETS XPAR_XIPIPSU_NUM_TARGETS
+                             ^
+xipipsu.h:131:28: note: in expansion of macro 'XIPIPSU_MAX_TARGETS'
+  XIpiPsu_Target TargetList[XIPIPSU_MAX_TARGETS] ; /** < List of IPI Targets */
+                            ^~~~~~~~~~~~~~~~~~~
+xipipsu_g.c:44:3: error: 'XPAR_XIPIPSU_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   XPAR_XIPIPSU_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_DEVICE_ID
+xipipsu_g.c:45:3: error: 'XPAR_XIPIPSU_0_BASE_ADDRESS' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   XPAR_XIPIPSU_0_BASE_ADDRESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_BASEADDR
+xipipsu_g.c:46:3: error: 'XPAR_XIPIPSU_0_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_XIPIPSU_0_BASE_ADDRESS'?
+   XPAR_XIPIPSU_0_BIT_MASK,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XIPIPSU_0_BASE_ADDRESS
+xipipsu_g.c:47:3: error: 'XPAR_XIPIPSU_0_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_XIPIPSU_0_BASE_ADDRESS'?
+   XPAR_XIPIPSU_0_BUFFER_INDEX,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XIPIPSU_0_BASE_ADDRESS
+xipipsu_g.c:48:3: error: 'XPAR_XIPIPSU_0_INT_ID' undeclared here (not in a function); did you mean 'XPAR_XIPIPSU_0_DEVICE_ID'?
+   XPAR_XIPIPSU_0_INT_ID,
+   ^~~~~~~~~~~~~~~~~~~~~
+   XPAR_XIPIPSU_0_DEVICE_ID
+xipipsu_g.c:53:5: error: 'XPAR_PSU_IPI_0_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_XIPIPSU_0_BIT_MASK'?
+     XPAR_PSU_IPI_0_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_XIPIPSU_0_BIT_MASK
+xipipsu_g.c:54:5: error: 'XPAR_PSU_IPI_0_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_XIPIPSU_0_BUFFER_INDEX'?
+     XPAR_PSU_IPI_0_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_XIPIPSU_0_BUFFER_INDEX
+xipipsu_g.c:57:5: error: 'XPAR_PSU_IPI_1_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_0_BIT_MASK'?
+     XPAR_PSU_IPI_1_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_0_BIT_MASK
+xipipsu_g.c:58:5: error: 'XPAR_PSU_IPI_1_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_0_BUFFER_INDEX'?
+     XPAR_PSU_IPI_1_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_0_BUFFER_INDEX
+xipipsu_g.c:61:5: error: 'XPAR_PSU_IPI_2_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_1_BIT_MASK'?
+     XPAR_PSU_IPI_2_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_1_BIT_MASK
+xipipsu_g.c:62:5: error: 'XPAR_PSU_IPI_2_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_1_BUFFER_INDEX'?
+     XPAR_PSU_IPI_2_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_1_BUFFER_INDEX
+xipipsu_g.c:65:5: error: 'XPAR_PSU_IPI_3_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_2_BIT_MASK'?
+     XPAR_PSU_IPI_3_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_2_BIT_MASK
+xipipsu_g.c:66:5: error: 'XPAR_PSU_IPI_3_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_2_BUFFER_INDEX'?
+     XPAR_PSU_IPI_3_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_2_BUFFER_INDEX
+xipipsu_g.c:69:5: error: 'XPAR_PSU_IPI_4_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_3_BIT_MASK'?
+     XPAR_PSU_IPI_4_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_3_BIT_MASK
+xipipsu_g.c:70:5: error: 'XPAR_PSU_IPI_4_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_3_BUFFER_INDEX'?
+     XPAR_PSU_IPI_4_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_3_BUFFER_INDEX
+xipipsu_g.c:73:5: error: 'XPAR_PSU_IPI_5_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_4_BIT_MASK'?
+     XPAR_PSU_IPI_5_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_4_BIT_MASK
+xipipsu_g.c:74:5: error: 'XPAR_PSU_IPI_5_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_4_BUFFER_INDEX'?
+     XPAR_PSU_IPI_5_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_4_BUFFER_INDEX
+xipipsu_g.c:77:5: error: 'XPAR_PSU_IPI_6_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_5_BIT_MASK'?
+     XPAR_PSU_IPI_6_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_5_BIT_MASK
+xipipsu_g.c:78:5: error: 'XPAR_PSU_IPI_6_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_5_BUFFER_INDEX'?
+     XPAR_PSU_IPI_6_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_5_BUFFER_INDEX
+xipipsu_g.c:81:5: error: 'XPAR_PSU_IPI_7_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_6_BIT_MASK'?
+     XPAR_PSU_IPI_7_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_6_BIT_MASK
+xipipsu_g.c:82:5: error: 'XPAR_PSU_IPI_7_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_6_BUFFER_INDEX'?
+     XPAR_PSU_IPI_7_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_6_BUFFER_INDEX
+xipipsu_g.c:85:5: error: 'XPAR_PSU_IPI_8_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_7_BIT_MASK'?
+     XPAR_PSU_IPI_8_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_7_BIT_MASK
+xipipsu_g.c:86:5: error: 'XPAR_PSU_IPI_8_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_7_BUFFER_INDEX'?
+     XPAR_PSU_IPI_8_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_7_BUFFER_INDEX
+xipipsu_g.c:89:5: error: 'XPAR_PSU_IPI_9_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_8_BIT_MASK'?
+     XPAR_PSU_IPI_9_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_8_BIT_MASK
+xipipsu_g.c:90:5: error: 'XPAR_PSU_IPI_9_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_8_BUFFER_INDEX'?
+     XPAR_PSU_IPI_9_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_8_BUFFER_INDEX
+xipipsu_g.c:93:5: error: 'XPAR_PSU_IPI_10_BIT_MASK' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_1_BIT_MASK'?
+     XPAR_PSU_IPI_10_BIT_MASK,
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_1_BIT_MASK
+xipipsu_g.c:94:5: error: 'XPAR_PSU_IPI_10_BUFFER_INDEX' undeclared here (not in a function); did you mean 'XPAR_PSU_IPI_1_BUFFER_INDEX'?
+     XPAR_PSU_IPI_10_BUFFER_INDEX
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     XPAR_PSU_IPI_1_BUFFER_INDEX
+make[1]: *** [xipipsu_g.o] Error 1
+In file included from xipipsu_sinit.c:54:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xipipsu.h:104,
+                 from xipipsu_sinit.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xipipsu.h:106:0,
+                 from xipipsu_sinit.c:55:
+xipipsu_hw.h:66:29: error: 'XPAR_XIPIPSU_NUM_TARGETS' undeclared here (not in a function); did you mean 'XIPIPSU_MAX_TARGETS'?
+ #define XIPIPSU_MAX_TARGETS XPAR_XIPIPSU_NUM_TARGETS
+                             ^
+xipipsu.h:131:28: note: in expansion of macro 'XIPIPSU_MAX_TARGETS'
+  XIpiPsu_Target TargetList[XIPIPSU_MAX_TARGETS] ; /** < List of IPI Targets */
+                            ^~~~~~~~~~~~~~~~~~~
+xipipsu_sinit.c: In function 'XIpiPsu_LookupConfig':
+xipipsu_sinit.c:82:27: error: 'XPAR_XIPIPSU_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+  for (Index = 0U; Index < XPAR_XIPIPSU_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                           XPAR_XADCPS_NUM_INSTANCES
+xipipsu_sinit.c:82:27: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xipipsu_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/ipipsu_v2_3/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/libmetal_v1_4/src"
+make -C psu_cortexa53_0/libsrc/libmetal_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+[  5%] Building C object lib/CMakeFiles/metal-static.dir/dma.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/dma.c:33:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/dma.c:33:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/dma.c.obj] Error 1
+[ 11%] Building C object lib/CMakeFiles/metal-static.dir/device.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/device.c:33:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/device.c:33:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/device.c.obj] Error 1
+[ 16%] Building C object lib/CMakeFiles/metal-static.dir/init.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/init.c:32:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/init.c:32:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/init.c.obj] Error 1
+[ 22%] Building C object lib/CMakeFiles/metal-static.dir/io.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/io.c:33:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/io.c:33:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/io.c.obj] Error 1
+[ 27%] Building C object lib/CMakeFiles/metal-static.dir/log.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/log.c:35:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/log.c:35:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/log.c.obj] Error 1
+[ 33%] Building C object lib/CMakeFiles/metal-static.dir/shmem.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/shmem.h:39,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/shmem.c:37:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/shmem.h:39,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/shmem.c:37:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/shmem.c.obj] Error 1
+[ 38%] Building C object lib/CMakeFiles/metal-static.dir/version.c.obj
+[ 44%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/cache.c.obj
+[ 50%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/condition.c.obj
+[ 55%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/device.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/device.c:36:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/device.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/device.c:36:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/device.c.obj] Error 1
+[ 61%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/init.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/init.c:36:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/init.c:36:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/init.c.obj] Error 1
+[ 66%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/io.c:36:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/io.c:36:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/io.c.obj] Error 1
+[ 72%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/irq.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/irq.c:38:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/irq.c:38:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/irq.c.obj] Error 1
+[ 77%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/shmem.h:39,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/shmem.c:36:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/io.h:45,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/shmem.h:39,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/shmem.c:36:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/shmem.c.obj] Error 1
+[ 83%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/sleep.c.obj
+[ 88%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/time.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/time.h:47,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/time.c:36:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:40,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/system/generic/sys.h:52,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/sys.h:111,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/metal/time.h:47,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/time.c:36:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~~
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/time.c.obj] Error 1
+[ 94%] Building C object lib/CMakeFiles/metal-static.dir/system/generic/zynqmp_a53/sys.c.obj
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_printf.h:12:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xil_io.h:65,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:198,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/zynqmp_a53/sys.c:40:
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic.h:199:0,
+                 from C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/libsrc/libmetal_v1_4/src/libmetal/lib/system/generic/zynqmp_a53/sys.c:40:
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_enable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:28: note: each undeclared identifier is reported only once for each function it appears in
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                            ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:53:9: note: in expansion of macro 'XScuGic_EnableIntr'
+         XScuGic_EnableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+         ^~~~~~~~~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h: In function 'sys_irq_disable':
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:29: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+                             ^
+C:/HDL_projects_git/IPI/IPI.sdk/ipi_app_bsp/psu_cortexa53_0/include/xscugic_hw.h:583:15: note: in definition of macro 'XScuGic_WriteReg'
+  (Xil_Out32(((BaseAddress) + (RegOffset)), ((u32)(Data))))
+               ^~~~~~~~~~~
+c:\hdl_projects_git\ipi\ipi.sdk\ipi_app_bsp\psu_cortexa53_0\include\metal\system\generic\zynqmp_a53\sys.h:58:9: note: in expansion of macro 'XScuGic_DisableIntr'
+         XScuGic_DisableIntr(XPAR_SCUGIC_0_DIST_BASEADDR, vector);
+make[1]: *** [libs] Error 2
+         ^~~~~~~~~~~~~~~~~~~
+make: *** [psu_cortexa53_0/libsrc/libmetal_v1_4/src/make.libs] Error 2
+make[4]: *** [lib/CMakeFiles/metal-static.dir/system/generic/zynqmp_a53/sys.c.obj] Error 1
+make[4]: Target `lib/CMakeFiles/metal-static.dir/build' not remade because of errors.
+make[3]: *** [lib/CMakeFiles/metal-static.dir/all] Error 2
+make[3]: Target `all' not remade because of errors.
+make[2]: *** [all] Error 2
+make[2]: Target `install' not remade because of errors.
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_1/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xresetps_hw.h:56,
+                 from xresetps.h:71,
+                 from xresetps.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xresetps.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xresetps_hw.h:56,
+                 from xresetps.h:71,
+                 from xresetps_g.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xresetps_g.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xresetps_g.c:80:38: error: 'XPAR_XRESETPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XResetPs_Config XResetPs_ConfigTable[XPAR_XRESETPS_NUM_INSTANCES] = {
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      XPAR_XADCPS_NUM_INSTANCES
+xresetps_g.c:82:8: error: 'XPAR_XRESETPS_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_SCUWDT_DEVICE_ID'?
+   (u16)XPAR_XRESETPS_DEVICE_ID,
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_SCUWDT_DEVICE_ID
+xresetps_g.c:83:8: error: 'XPAR_XRESETPS_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XRESETPS_BASEADDR
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+make[1]: *** [xresetps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xresetps_hw.h:56,
+                 from xresetps.h:71,
+                 from xresetps_sinit.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xresetps_sinit.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xresetps_sinit.c:65:45: error: 'XPAR_XRESETPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XResetPs_Config XResetPs_ConfigTable[XPAR_XRESETPS_NUM_INSTANCES];
+                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                             XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xresetps_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/resetps_v1_1/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_5/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xrtcpsu.h:128,
+                 from xrtcpsu.c:64:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xrtcpsu.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xrtcpsu.h:128,
+                 from xrtcpsu_g.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xrtcpsu_g.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xrtcpsu_g.c:75:36: error: 'XPAR_XRTCPSU_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XRtcPsu_Config XRtcPsu_ConfigTable[XPAR_XRTCPSU_NUM_INSTANCES] = {
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XPAR_XADCPS_NUM_INSTANCES
+xrtcpsu_g.c:77:8: error: 'XPAR_XRTCPSU_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XRTCPSU_0_DEVICE_ID, /* Unique ID of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xrtcpsu_g.c:78:8: error: 'XPAR_XRTCPSU_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XRTCPSU_0_BASEADDR /* Base address of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+make[1]: *** [xrtcpsu_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xrtcpsu.h:128,
+                 from xrtcpsu_intr.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xrtcpsu_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xrtcpsu.h:128,
+                 from xrtcpsu_selftest.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xrtcpsu_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xrtcpsu.h:128,
+                 from xrtcpsu_sinit.c:58:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xrtcpsu_sinit.c:59:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xrtcpsu_sinit.c: In function 'XRtcPsu_LookupConfig':
+xrtcpsu_sinit.c:93:32: error: 'XPAR_XRTCPSU_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+  for (Index = 0U; Index < (u32)XPAR_XRTCPSU_NUM_INSTANCES; Index++) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                XPAR_XADCPS_NUM_INSTANCES
+xrtcpsu_sinit.c:93:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xrtcpsu_sinit.o] Error 1
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v3_9/src"
+make[1]: Target `libs' not remade because of errors.
+make -C psu_cortexa53_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+make: *** [psu_cortexa53_0/libsrc/rtcpsu_v1_5/src/make.libs] Error 2
+"Compiling scugic"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic.c:129:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xscugic.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic_g.c:63:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xscugic_g.c:64:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xscugic_g.c:88:36: error: 'XPAR_XSCUGIC_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_SCUGIC_NUM_INSTANCES'?
+ XScuGic_Config XScuGic_ConfigTable[XPAR_XSCUGIC_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XPAR_SCUGIC_NUM_INSTANCES
+xscugic_g.c:91:14: error: 'XPAR_SCUGIC_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_SCUWDT_DEVICE_ID'?
+         (u16)XPAR_SCUGIC_0_DEVICE_ID, /* Unique ID  of device */
+              ^~~~~~~~~~~~~~~~~~~~~~~
+              XPAR_SCUWDT_DEVICE_ID
+xscugic_g.c:92:14: error: 'XPAR_SCUGIC_0_CPU_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_SCUGIC_CPU_BASEADDR'?
+         (u32)XPAR_SCUGIC_0_CPU_BASEADDR, /* CPU Interface base address */
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~
+              XPAR_SCUGIC_CPU_BASEADDR
+xscugic_g.c:93:14: error: 'XPAR_SCUGIC_0_DIST_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_SCUGIC_DIST_BASEADDR'?
+         (u32)XPAR_SCUGIC_0_DIST_BASEADDR /* Distributor base address */
+              ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+              XPAR_SCUGIC_DIST_BASEADDR
+make[1]: *** [xscugic_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic_hw.c:82:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xscugic_hw.c:83:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xscugic_hw.c:99:43: error: 'XPAR_XSCUGIC_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_SCUGIC_NUM_INSTANCES'?
+ extern XScuGic_Config XScuGic_ConfigTable[XPAR_XSCUGIC_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XPAR_SCUGIC_NUM_INSTANCES
+make[1]: *** [xscugic_hw.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic_intr.c:83:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xscugic_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic_selftest.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xscugic_selftest.o] Error 1
+In file included from xscugic_sinit.c:58:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xscugic.h:198,
+                 from xscugic_sinit.c:59:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xscugic_sinit.o] Error 1
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_5/src"
+make[1]: Target `libs' not remade because of errors.
+make -C psu_cortexa53_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+make: *** [psu_cortexa53_0/libsrc/scugic_v3_9/src/make.libs] Error 2
+"Compiling sdps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xsdps.h:165,
+                 from xsdps.c:99:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsdps_hw.h:80:0,
+                 from xsdps.h:168,
+                 from xsdps.c:99:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xsdps.o] Error 1
+In file included from xsdps_g.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xsdps.h:165,
+                 from xsdps_g.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsdps_hw.h:80:0,
+                 from xsdps.h:168,
+                 from xsdps_g.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xsdps_g.c:65:3: error: 'XPAR_XSDPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   XPAR_XSDPS_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_DEVICE_ID
+xsdps_g.c:66:3: error: 'XPAR_XSDPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   XPAR_XSDPS_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_BASEADDR
+xsdps_g.c:67:3: error: 'XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ' undeclared here (not in a function); did you mean 'XPAR_PSU_PSS_REF_CLK_FREQ_HZ'?
+   XPAR_XSDPS_0_SDIO_CLK_FREQ_HZ
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_PSS_REF_CLK_FREQ_HZ
+make[1]: *** [xsdps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xsdps.h:165,
+                 from xsdps_options.c:84:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsdps_hw.h:80:0,
+                 from xsdps.h:168,
+                 from xsdps_options.c:84:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xsdps_options.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xsdps.h:165,
+                 from xsdps_sinit.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsdps_hw.h:80:0,
+                 from xsdps.h:168,
+                 from xsdps_sinit.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsdps_sinit.c:57:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xsdps_sinit.c: In function 'XSdPs_LookupConfig':
+"Running Make libs in psu_cortexa53_0/libsrc/spips_v3_1/src"
+xsdps_sinit.c:91:32: error: 'XPAR_XSDPS_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+make -C psu_cortexa53_0/libsrc/spips_v3_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+  for (Index = 0U; Index < (u32)XPAR_XSDPS_NUM_INSTANCES; Index++) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+                                XPAR_XADCPS_NUM_INSTANCES
+xsdps_sinit.c:91:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xsdps_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+"Compiling spips"
+make: *** [psu_cortexa53_0/libsrc/sdps_v3_5/src/make.libs] Error 2
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips.h:268,
+                 from xspips.c:80:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xspips.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips.h:268,
+                 from xspips_g.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xspips_g.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xspips_g.c:76:34: error: 'XPAR_XSPIPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XSpiPs_Config XSpiPs_ConfigTable[XPAR_XSPIPS_NUM_INSTANCES] = {
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                  XPAR_XADCPS_NUM_INSTANCES
+xspips_g.c:78:8: error: 'XPAR_XSPIPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XSPIPS_0_DEVICE_ID, /* Device ID for instance */
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xspips_g.c:79:8: error: 'XPAR_XSPIPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XSPIPS_0_BASEADDR,  /* Device base address */
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+xspips_g.c:80:8: error: 'XPAR_XSPIPS_0_SPI_CLK_FREQ_HZ' undeclared here (not in a function); did you mean 'XPAR_PSU_PSS_REF_CLK_FREQ_HZ'?
+   (u32)XPAR_XSPIPS_0_SPI_CLK_FREQ_HZ
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_PSU_PSS_REF_CLK_FREQ_HZ
+make[1]: *** [xspips_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips_hw.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xspips_hw.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips.h:268,
+                 from xspips_options.c:61:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xspips_options.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips.h:268,
+                 from xspips_selftest.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xspips_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xspips_hw.h:75,
+                 from xspips.h:268,
+                 from xspips_sinit.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xspips_sinit.c:57:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xspips_sinit.c:68:41: error: 'XPAR_XSPIPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XSpiPs_Config XSpiPs_ConfigTable[XPAR_XSPIPS_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                         XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xspips_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/spips_v3_1/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v6_7/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone A53"
+In file included from inbyte.c:1:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from ../../../include/xuartps_hw.h:75,
+                 from inbyte.c:2:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from outbyte.c:1:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from ../../../include/xuartps_hw.h:75,
+                 from outbyte.c:2:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from print.c:20:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from read.c:36:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from read.c:37:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from sleep.h:56,
+                 from sleep.c:62:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xtime_l.h:64:0,
+                 from sleep.c:63:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from sleep.c:63:0:
+xtime_l.h:81:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:64:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from uart.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from uart.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from write.c:36:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from write.c:37:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_cache.c:83:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_cache.c:85:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_io.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_printf.c:8:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_sleepcommon.c:50:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_sleeptimer.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_sleeptimer.h:57:0,
+                 from xil_sleeptimer.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xtime_l.h:64:0,
+                 from xil_sleeptimer.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_sleeptimer.c:55:0:
+xtime_l.h:81:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_testio.c:52:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xil_testmem.c:51:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xplatform_info.c:62:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xtime_l.h:64:0,
+                 from xtime_l.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xtime_l.c:56:0:
+xtime_l.h:81:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_printf.h:12:0,
+                 from xil_io.h:65,
+                 from xtime_l.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from boot.S:94:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from translation_table.S:90:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_4/src"
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+ 
+translation_table.S:149:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+"Compiling sysmonpsu"
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+translation_table.S:200:2: warning: #warning "There's no DDR_0 in the HW design. MMU translation table marks 2 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_0 in the HW design. MMU translation table marks 2 GB DDR address space as undefined"
+  ^~~~~~~
+In file included from xil-crt0.S:58:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [standalone_libs] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/standalone_v6_7/src/make.libs] Error 2
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xsysmonpsu.h:200,
+                 from xsysmonpsu.c:76:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_hw.h:69:0,
+                 from xsysmonpsu.h:201,
+                 from xsysmonpsu.c:76:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xsysmonpsu.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xsysmonpsu.h:200,
+                 from xsysmonpsu_g.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_hw.h:69:0,
+                 from xsysmonpsu.h:201,
+                 from xsysmonpsu_g.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_g.c:54:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xsysmonpsu_g.c:74:42: error: 'XPAR_XSYSMONPSU_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XSysMonPsu_Config XSysMonPsu_ConfigTable[XPAR_XSYSMONPSU_NUM_INSTANCES] = {
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                          XPAR_XADCPS_NUM_INSTANCES
+xsysmonpsu_g.c:76:8: error: 'XPAR_XSYSMONPSU_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XSYSMONPSU_0_DEVICE_ID, /* Unique ID of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xsysmonpsu_g.c:77:8: error: 'XPAR_XSYSMONPSU_0_BASEADDR' undeclared here (not in a function); did you mean 'XSYSMONPSU_BASEADDR'?
+   (u32)XPAR_XSYSMONPSU_0_BASEADDR /* Base address of device */
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        XSYSMONPSU_BASEADDR
+make[1]: *** [xsysmonpsu_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xsysmonpsu.h:200,
+                 from xsysmonpsu_intr.c:52:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_hw.h:69:0,
+                 from xsysmonpsu.h:201,
+                 from xsysmonpsu_intr.c:52:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xsysmonpsu_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xsysmonpsu.h:200,
+                 from xsysmonpsu_selftest.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_hw.h:69:0,
+                 from xsysmonpsu.h:201,
+                 from xsysmonpsu_selftest.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xsysmonpsu_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xsysmonpsu.h:200,
+                 from xsysmonpsu_sinit.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_hw.h:69:0,
+                 from xsysmonpsu.h:201,
+                 from xsysmonpsu_sinit.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xsysmonpsu_sinit.c:58:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xsysmonpsu_sinit.c: In function 'XSysMonPsu_LookupConfig':
+"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_6/src"
+xsysmonpsu_sinit.c:92:32: error: 'XPAR_XSYSMONPSU_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+make -C psu_cortexa53_0/libsrc/ttcps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+  for (Index = 0U; Index < (u32)XPAR_XSYSMONPSU_NUM_INSTANCES; Index++) {
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                XPAR_XADCPS_NUM_INSTANCES
+xsysmonpsu_sinit.c:92:32: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xsysmonpsu_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/sysmonpsu_v2_4/src/make.libs] Error 2
+"Compiling ttcps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xttcps_hw.h:69,
+                 from xttcps.h:119,
+                 from xttcps.c:67:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xttcps.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xttcps_hw.h:69,
+                 from xttcps.h:119,
+                 from xttcps_g.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xttcps_g.c:57:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xttcps_g.c:77:34: error: 'XPAR_XTTCPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XTtcPs_Config XTtcPs_ConfigTable[XPAR_XTTCPS_NUM_INSTANCES] = {
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                  XPAR_XADCPS_NUM_INSTANCES
+xttcps_g.c:79:9: error: 'XPAR_XTTCPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+    (u16)XPAR_XTTCPS_0_DEVICE_ID, /* Device ID for instance */
+         ^~~~~~~~~~~~~~~~~~~~~~~
+         XPAR_XADCPS_0_DEVICE_ID
+xttcps_g.c:80:9: error: 'XPAR_XTTCPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+    (u32)XPAR_XTTCPS_0_BASEADDR, /* Device base address */
+         ^~~~~~~~~~~~~~~~~~~~~~
+         XPAR_XADCPS_0_BASEADDR
+xttcps_g.c:81:9: error: 'XPAR_XTTCPS_0_TTC_CLK_FREQ_HZ' undeclared here (not in a function); did you mean 'XPAR_PSU_PSS_REF_CLK_FREQ_HZ'?
+    (u32)XPAR_XTTCPS_0_TTC_CLK_FREQ_HZ /* Device input clock frequency */
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         XPAR_PSU_PSS_REF_CLK_FREQ_HZ
+make[1]: *** [xttcps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xttcps_hw.h:69,
+                 from xttcps.h:119,
+                 from xttcps_options.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xttcps_options.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xttcps_hw.h:69,
+                 from xttcps.h:119,
+                 from xttcps_selftest.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xttcps_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xttcps_hw.h:69,
+                 from xttcps.h:119,
+                 from xttcps_sinit.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xttcps_sinit.c:55:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xttcps_sinit.c:66:41: error: 'XPAR_XTTCPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XTtcPs_Config XTtcPs_ConfigTable[XPAR_XTTCPS_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                         XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xttcps_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/ttcps_v3_6/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xuartps.o] Error 1
+In file included from xuartps_g.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps_g.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xuartps_g.c:76:36: error: 'XPAR_XUARTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XUartPs_Config XUartPs_ConfigTable[XPAR_XUARTPS_NUM_INSTANCES] = {
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XPAR_XADCPS_NUM_INSTANCES
+xuartps_g.c:78:8: error: 'XPAR_XUARTPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XUARTPS_0_DEVICE_ID,
+        ^~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xuartps_g.c:79:8: error: 'XPAR_XUARTPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XUARTPS_0_BASEADDR,
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+xuartps_g.c:80:8: error: 'XPAR_XUARTPS_0_UART_CLK_FREQ_HZ' undeclared here (not in a function); did you mean 'XPAR_XUARTPS_0_CLOCK_HZ'?
+   (u32)XPAR_XUARTPS_0_UART_CLK_FREQ_HZ,
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XUARTPS_0_CLOCK_HZ
+make[1]: *** [xuartps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps_hw.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xuartps_hw.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps_intr.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xuartps_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps_options.c:58:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xuartps_options.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps_selftest.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xuartps_selftest.o] Error 1
+In file included from xuartps_sinit.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xuartps_hw.h:75,
+                 from xuartps.h:190,
+                 from xuartps_sinit.c:57:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xuartps_sinit.c:66:43: error: 'XPAR_XUARTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+ extern XUartPs_Config XUartPs_ConfigTable[XPAR_XUARTPS_NUM_INSTANCES];
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xuartps_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/uartps_v3_6/src/make.libs] Error 2
+"Compiling usbpsu"
+In file included from xusbpsu.h:81:0,
+                 from xusb_wrapper.h:62,
+                 from xusb_wrapper.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusb_wrapper.h:62,
+                 from xusb_wrapper.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xusb_wrapper.o] Error 1
+In file included from xusbpsu.h:81:0,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu.c:56:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xusbpsu.o] Error 1
+In file included from xusbpsu.h:81:0,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_endpoint.h:65,
+                 from xusbpsu_controltransfers.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_endpoint.h:65,
+                 from xusbpsu_controltransfers.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xusbpsu_controltransfers.o] Error 1
+In file included from xusbpsu.h:81:0,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_endpoint.h:65,
+                 from xusbpsu_endpoint.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_endpoint.h:65,
+                 from xusbpsu_endpoint.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xusbpsu_endpoint.o] Error 1
+In file included from xusbpsu_g.c:31:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xusbpsu.h:81:0,
+                 from xusbpsu_g.c:32:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusbpsu_g.c:32:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xusbpsu_g.c:41:3: error: 'XPAR_PSU_USB_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   XPAR_PSU_USB_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_DEVICE_ID
+xusbpsu_g.c:42:3: error: 'XPAR_PSU_USB_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   XPAR_PSU_USB_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_BASEADDR
+make[1]: *** [xusbpsu_g.o] Error 1
+In file included from xusbpsu.h:81:0,
+                 from xusbpsu_hibernation.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusbpsu_hibernation.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xusbpsu_hibernation.c: In function 'Xusbpsu_HibernationIntr':
+xusbpsu_hibernation.c:375:42: error: 'XPAR_XUSBPSU_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+  if (InstancePtr->ConfigPtr->DeviceId == XPAR_XUSBPSU_0_DEVICE_ID)
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+                                          XPAR_XADCPS_0_DEVICE_ID
+xusbpsu_hibernation.c:375:42: note: each undeclared identifier is reported only once for each function it appears in
+xusbpsu_hibernation.c: In function 'XUsbPsu_WakeupIntr':
+xusbpsu_hibernation.c:575:42: error: 'XPAR_XUSBPSU_0_DEVICE_ID' undeclared (first use in this function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+  if (InstancePtr->ConfigPtr->DeviceId == XPAR_XUSBPSU_0_DEVICE_ID)
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~
+                                          XPAR_XADCPS_0_DEVICE_ID
+make[1]: *** [xusbpsu_hibernation.o] Error 1
+In file included from xusbpsu.h:81:0,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_intr.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusb_wrapper.h:62,
+                 from xusbpsu_intr.c:60:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xusbpsu_intr.o] Error 1
+In file included from xusbpsu_sinit.c:53:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xusbpsu.h:81:0,
+                 from xusbpsu_sinit.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xusbpsu.h:86,
+                 from xusbpsu_sinit.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xusbpsu_sinit.c: In function 'XUsbPsu_LookupConfig':
+xusbpsu_sinit.c:90:24: error: 'XPAR_XUSBPSU_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+  for (i = 0U; i < (u32)XPAR_XUSBPSU_NUM_INSTANCES; i++) {
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/video_common_v4_4/src"
+                        XPAR_XADCPS_NUM_INSTANCES
+make -C psu_cortexa53_0/libsrc/video_common_v4_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+xusbpsu_sinit.c:90:24: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [xusbpsu_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/usbpsu_v1_4/src/make.libs] Error 2
+"Compiling video_common"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xvidc.h:92,
+                 from xvidc.c:78:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xvidc.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xvidc.h:92,
+                 from xvidc_edid.h:70,
+                 from xvidc_edid.c:61:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xvidc_edid.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xvidc.h:92,
+                 from xvidc_edid_ext.h:35,
+                 from xvidc_edid_ext.c:76:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xvidc_edid_ext.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xvidc.h:92,
+                 from xvidc_edid_ext.h:35,
+                 from xvidc_parse_edid.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xvidc_parse_edid.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from xvidc.h:92,
+                 from xvidc_timings_table.c:65:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xvidc_timings_table.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/video_common_v4_4/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/wdtps_v3_0/src"
+make -C psu_cortexa53_0/libsrc/wdtps_v3_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling wdtps"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xwdtps_hw.h:64,
+                 from xwdtps.h:103,
+                 from xwdtps.c:59:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xwdtps.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xwdtps_hw.h:64,
+                 from xwdtps.h:103,
+                 from xwdtps_g.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xwdtps_g.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xwdtps_g.c:76:34: error: 'XPAR_XWDTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ XWdtPs_Config XWdtPs_ConfigTable[XPAR_XWDTPS_NUM_INSTANCES] = {
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                  XPAR_XADCPS_NUM_INSTANCES
+xwdtps_g.c:78:8: error: 'XPAR_XWDTPS_0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   (u16)XPAR_XWDTPS_0_DEVICE_ID,
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_DEVICE_ID
+xwdtps_g.c:79:8: error: 'XPAR_XWDTPS_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_BASEADDR'?
+   (u32)XPAR_XWDTPS_0_BASEADDR
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XADCPS_0_BASEADDR
+xwdtps_g.c:82:8: error: 'XPAR_XWDTPS_1_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XWDTPS_0_DEVICE_ID'?
+   (u16)XPAR_XWDTPS_1_DEVICE_ID,
+        ^~~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XWDTPS_0_DEVICE_ID
+xwdtps_g.c:83:8: error: 'XPAR_XWDTPS_1_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XWDTPS_0_BASEADDR'?
+   (u32)XPAR_XWDTPS_1_BASEADDR
+        ^~~~~~~~~~~~~~~~~~~~~~
+        XPAR_XWDTPS_0_BASEADDR
+make[1]: *** [xwdtps_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xwdtps_hw.h:64,
+                 from xwdtps.h:103,
+                 from xwdtps_selftest.c:58:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xwdtps_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xwdtps_hw.h:64,
+                 from xwdtps.h:103,
+                 from xwdtps_sinit.c:55:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xwdtps_sinit.c:56:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xwdtps_sinit.c:66:41: error: 'XPAR_XWDTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+ extern XWdtPs_Config XWdtPs_ConfigTable[XPAR_XWDTPS_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                         XPAR_XADCPS_NUM_INSTANCES
+make[1]: *** [xwdtps_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/wdtps_v3_0/src/make.libs] Error 2
+"Running Make libs in psu_cortexa53_0/libsrc/xilfpga_v4_1/src"
+make -C psu_cortexa53_0/libsrc/xilfpga_v4_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling xilfpga Library"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xilfpga_pcap.c:68:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xilfpga_pcap.c:75:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_5/src"
+make[1]: *** [xilfpga_pcap.o] Error 1
+make -C psu_cortexa53_0/libsrc/zdma_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/xilfpga_v4_1/src/make.libs] Error 2
+"Compiling zdma"
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xzdma_hw.h:60,
+                 from xzdma.h:144,
+                 from xzdma.c:62:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xzdma.o] Error 1
+In file included from xzdma_g.c:32:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xzdma_hw.h:60,
+                 from xzdma.h:144,
+                 from xzdma_g.c:33:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xzdma_g.c:42:3: error: 'XPAR_PSU_ADMA_CH0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_XADCPS_0_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XADCPS_0_DEVICE_ID
+xzdma_g.c:43:3: error: 'XPAR_PSU_ADMA_CH0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_DEVICE_ID
+xzdma_g.c:44:3: error: 'XPAR_PSU_ADMA_CH0_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_BASEADDR'?
+   XPAR_PSU_ADMA_CH0_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_BASEADDR
+xzdma_g.c:47:3: error: 'XPAR_PSU_ADMA_CH1_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH1_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_DEVICE_ID
+xzdma_g.c:48:3: error: 'XPAR_PSU_ADMA_CH1_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_BASEADDR'?
+   XPAR_PSU_ADMA_CH1_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_BASEADDR
+xzdma_g.c:49:3: error: 'XPAR_PSU_ADMA_CH1_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_DMA_MODE'?
+   XPAR_PSU_ADMA_CH1_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_DMA_MODE
+xzdma_g.c:52:3: error: 'XPAR_PSU_ADMA_CH2_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH1_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH2_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH1_DEVICE_ID
+xzdma_g.c:53:3: error: 'XPAR_PSU_ADMA_CH2_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH1_BASEADDR'?
+   XPAR_PSU_ADMA_CH2_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH1_BASEADDR
+xzdma_g.c:54:3: error: 'XPAR_PSU_ADMA_CH2_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH1_DMA_MODE'?
+   XPAR_PSU_ADMA_CH2_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH1_DMA_MODE
+xzdma_g.c:57:3: error: 'XPAR_PSU_ADMA_CH3_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH2_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH3_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH2_DEVICE_ID
+xzdma_g.c:58:3: error: 'XPAR_PSU_ADMA_CH3_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH2_BASEADDR'?
+   XPAR_PSU_ADMA_CH3_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH2_BASEADDR
+xzdma_g.c:59:3: error: 'XPAR_PSU_ADMA_CH3_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH2_DMA_MODE'?
+   XPAR_PSU_ADMA_CH3_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH2_DMA_MODE
+xzdma_g.c:62:3: error: 'XPAR_PSU_ADMA_CH4_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH3_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH4_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH3_DEVICE_ID
+xzdma_g.c:63:3: error: 'XPAR_PSU_ADMA_CH4_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH3_BASEADDR'?
+   XPAR_PSU_ADMA_CH4_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH3_BASEADDR
+xzdma_g.c:64:3: error: 'XPAR_PSU_ADMA_CH4_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH3_DMA_MODE'?
+   XPAR_PSU_ADMA_CH4_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH3_DMA_MODE
+xzdma_g.c:67:3: error: 'XPAR_PSU_ADMA_CH5_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH4_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH5_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH4_DEVICE_ID
+xzdma_g.c:68:3: error: 'XPAR_PSU_ADMA_CH5_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH4_BASEADDR'?
+   XPAR_PSU_ADMA_CH5_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH4_BASEADDR
+xzdma_g.c:69:3: error: 'XPAR_PSU_ADMA_CH5_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH4_DMA_MODE'?
+   XPAR_PSU_ADMA_CH5_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH4_DMA_MODE
+xzdma_g.c:72:3: error: 'XPAR_PSU_ADMA_CH6_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH5_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH6_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH5_DEVICE_ID
+xzdma_g.c:73:3: error: 'XPAR_PSU_ADMA_CH6_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH5_BASEADDR'?
+   XPAR_PSU_ADMA_CH6_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH5_BASEADDR
+xzdma_g.c:74:3: error: 'XPAR_PSU_ADMA_CH6_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH5_DMA_MODE'?
+   XPAR_PSU_ADMA_CH6_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH5_DMA_MODE
+xzdma_g.c:77:3: error: 'XPAR_PSU_ADMA_CH7_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH6_DEVICE_ID'?
+   XPAR_PSU_ADMA_CH7_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH6_DEVICE_ID
+xzdma_g.c:78:3: error: 'XPAR_PSU_ADMA_CH7_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH6_BASEADDR'?
+   XPAR_PSU_ADMA_CH7_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH6_BASEADDR
+xzdma_g.c:79:3: error: 'XPAR_PSU_ADMA_CH7_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH6_DMA_MODE'?
+   XPAR_PSU_ADMA_CH7_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH6_DMA_MODE
+xzdma_g.c:82:3: error: 'XPAR_PSU_GDMA_CH0_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_DEVICE_ID
+xzdma_g.c:83:3: error: 'XPAR_PSU_GDMA_CH0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_BASEADDR'?
+   XPAR_PSU_GDMA_CH0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_BASEADDR
+xzdma_g.c:84:3: error: 'XPAR_PSU_GDMA_CH0_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_ADMA_CH0_DMA_MODE'?
+   XPAR_PSU_GDMA_CH0_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_ADMA_CH0_DMA_MODE
+xzdma_g.c:87:3: error: 'XPAR_PSU_GDMA_CH1_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH0_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH1_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH0_DEVICE_ID
+xzdma_g.c:88:3: error: 'XPAR_PSU_GDMA_CH1_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH0_BASEADDR'?
+   XPAR_PSU_GDMA_CH1_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH0_BASEADDR
+xzdma_g.c:89:3: error: 'XPAR_PSU_GDMA_CH1_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH0_DMA_MODE'?
+   XPAR_PSU_GDMA_CH1_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH0_DMA_MODE
+xzdma_g.c:92:3: error: 'XPAR_PSU_GDMA_CH2_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH1_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH2_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH1_DEVICE_ID
+xzdma_g.c:93:3: error: 'XPAR_PSU_GDMA_CH2_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH1_BASEADDR'?
+   XPAR_PSU_GDMA_CH2_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH1_BASEADDR
+xzdma_g.c:94:3: error: 'XPAR_PSU_GDMA_CH2_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH1_DMA_MODE'?
+   XPAR_PSU_GDMA_CH2_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH1_DMA_MODE
+xzdma_g.c:97:3: error: 'XPAR_PSU_GDMA_CH3_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH2_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH3_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH2_DEVICE_ID
+xzdma_g.c:98:3: error: 'XPAR_PSU_GDMA_CH3_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH2_BASEADDR'?
+   XPAR_PSU_GDMA_CH3_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH2_BASEADDR
+xzdma_g.c:99:3: error: 'XPAR_PSU_GDMA_CH3_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH2_DMA_MODE'?
+   XPAR_PSU_GDMA_CH3_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH2_DMA_MODE
+xzdma_g.c:102:3: error: 'XPAR_PSU_GDMA_CH4_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH3_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH4_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH3_DEVICE_ID
+xzdma_g.c:103:3: error: 'XPAR_PSU_GDMA_CH4_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH3_BASEADDR'?
+   XPAR_PSU_GDMA_CH4_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH3_BASEADDR
+xzdma_g.c:104:3: error: 'XPAR_PSU_GDMA_CH4_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH3_DMA_MODE'?
+   XPAR_PSU_GDMA_CH4_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH3_DMA_MODE
+xzdma_g.c:107:3: error: 'XPAR_PSU_GDMA_CH5_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH4_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH5_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH4_DEVICE_ID
+xzdma_g.c:108:3: error: 'XPAR_PSU_GDMA_CH5_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH4_BASEADDR'?
+   XPAR_PSU_GDMA_CH5_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH4_BASEADDR
+xzdma_g.c:109:3: error: 'XPAR_PSU_GDMA_CH5_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH4_DMA_MODE'?
+   XPAR_PSU_GDMA_CH5_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH4_DMA_MODE
+xzdma_g.c:112:3: error: 'XPAR_PSU_GDMA_CH6_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH5_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH6_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH5_DEVICE_ID
+xzdma_g.c:113:3: error: 'XPAR_PSU_GDMA_CH6_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH5_BASEADDR'?
+   XPAR_PSU_GDMA_CH6_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH5_BASEADDR
+xzdma_g.c:114:3: error: 'XPAR_PSU_GDMA_CH6_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH5_DMA_MODE'?
+   XPAR_PSU_GDMA_CH6_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH5_DMA_MODE
+xzdma_g.c:117:3: error: 'XPAR_PSU_GDMA_CH7_DEVICE_ID' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH6_DEVICE_ID'?
+   XPAR_PSU_GDMA_CH7_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH6_DEVICE_ID
+xzdma_g.c:118:3: error: 'XPAR_PSU_GDMA_CH7_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH6_BASEADDR'?
+   XPAR_PSU_GDMA_CH7_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH6_BASEADDR
+xzdma_g.c:119:3: error: 'XPAR_PSU_GDMA_CH7_DMA_MODE' undeclared here (not in a function); did you mean 'XPAR_PSU_GDMA_CH6_DMA_MODE'?
+   XPAR_PSU_GDMA_CH7_DMA_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_PSU_GDMA_CH6_DMA_MODE
+make[1]: *** [xzdma_g.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xzdma_hw.h:60,
+                 from xzdma.h:144,
+                 from xzdma_intr.c:54:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xzdma_intr.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xzdma_hw.h:60,
+                 from xzdma.h:144,
+                 from xzdma_selftest.c:53:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+make[1]: *** [xzdma_selftest.o] Error 1
+In file included from ../../../include/xil_printf.h:12:0,
+                 from ../../../include/xil_io.h:65,
+                 from xzdma_hw.h:60,
+                 from xzdma.h:144,
+                 from xzdma_sinit.c:52:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+In file included from xzdma_sinit.c:53:0:
+../../../include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+xzdma_sinit.c: In function 'XZDma_LookupConfig':
+xzdma_sinit.c:91:40: error: 'XPAR_XZDMA_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XPAR_XADCPS_NUM_INSTANCES'?
+  extern XZDma_Config XZDma_ConfigTable[XPAR_XZDMA_NUM_INSTANCES];
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+                                        XPAR_XADCPS_NUM_INSTANCES
+xzdma_sinit.c:91:40: note: each undeclared identifier is reported only once for each function it appears in
+xzdma_sinit.c:91:22: warning: unused variable 'XZDma_ConfigTable' [-Wunused-variable]
+  extern XZDma_Config XZDma_ConfigTable[XPAR_XZDMA_NUM_INSTANCES];
+                      ^~~~~~~~~~~~~~~~~
+make[1]: *** [xzdma_sinit.o] Error 1
+make[1]: Target `libs' not remade because of errors.
+make: *** [psu_cortexa53_0/libsrc/zdma_v1_5/src/make.libs] Error 2
+make: Target `all' not remade because of errors.
+
+11:39:37 Build Finished (took 38s.765ms)
+

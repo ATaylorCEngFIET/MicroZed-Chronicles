@@ -1,0 +1,5 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[destination_device = pl]C:\Users\aptay\Dropbox\adiuvo\avnet\Lab1_files\Prebuilt\design_1_wrapper.bit
+}

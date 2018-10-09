@@ -1,0 +1,1661 @@
+09:28:48 INFO  : Registering command handlers for SDK TCF services
+09:28:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\HDL_projects_git\IPI\IPI.sdk\temp_xsdb_launch_script.tcl
+09:28:55 INFO  : XSCT server has started successfully.
+09:28:55 INFO  : Successfully done setting XSCT server connection channel  
+09:28:58 INFO  : Successfully done setting SDK workspace  
+09:28:58 INFO  : Processing command line option -hwspec C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper.hdf.
+09:28:58 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+10:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:02:08 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+10:02:08 INFO  : 'jtag frequency' command is executed.
+10:02:08 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:02:09 INFO  : Context for 'APU' is selected.
+10:02:10 INFO  : System reset is completed.
+10:02:13 INFO  : 'after 3000' command is executed.
+10:02:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+10:02:17 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:02:17 INFO  : Context for 'APU' is selected.
+10:02:18 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:02:18 INFO  : 'configparams force-mem-access 1' command is executed.
+10:02:18 INFO  : Context for 'APU' is selected.
+10:02:18 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:02:19 INFO  : 'psu_init' command is executed.
+10:02:19 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+10:02:20 INFO  : 'after 1000' command is executed.
+10:02:20 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:02:21 INFO  : 'after 1000' command is executed.
+10:02:21 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:02:21 INFO  : 'catch {psu_protection}' command is executed.
+10:02:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:02:22 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+10:02:22 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:02:22 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+10:02:23 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+10:02:23 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+10:02:23 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/r5_hello/Debug/r5_hello.elf' is downloaded to processor 'psu_cortexr5_0'.
+10:02:23 INFO  : 'configparams force-mem-access 0' command is executed.
+10:02:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/r5_hello/Debug/r5_hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:02:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:02:23 INFO  : 'con' command is executed.
+10:02:23 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+10:02:24 INFO  : 'con' command is executed.
+10:02:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+10:02:24 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+10:03:32 INFO  : Disconnected from the channel tcfchan#1.
+10:05:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:06:00 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+10:06:00 INFO  : 'jtag frequency' command is executed.
+10:06:00 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:06:00 INFO  : Context for 'APU' is selected.
+10:06:01 INFO  : System reset is completed.
+10:06:04 INFO  : 'after 3000' command is executed.
+10:06:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+10:06:08 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:06:08 INFO  : Context for 'APU' is selected.
+10:06:08 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:06:08 INFO  : 'configparams force-mem-access 1' command is executed.
+10:06:08 INFO  : Context for 'APU' is selected.
+10:06:08 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:06:10 INFO  : 'psu_init' command is executed.
+10:06:10 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+10:06:11 INFO  : 'after 1000' command is executed.
+10:06:11 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:06:12 INFO  : 'after 1000' command is executed.
+10:06:12 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:06:12 INFO  : 'catch {psu_protection}' command is executed.
+10:06:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:06:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+10:06:13 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:06:13 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+10:06:13 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+10:06:14 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+10:06:14 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/r5_hello/Debug/r5_hello.elf' is downloaded to processor 'psu_cortexr5_0'.
+10:06:14 INFO  : 'configparams force-mem-access 0' command is executed.
+10:06:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/r5_hello/Debug/r5_hello.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:06:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:06:14 INFO  : 'con' command is executed.
+10:06:14 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+10:06:14 INFO  : 'con' command is executed.
+10:06:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+10:06:14 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+10:20:01 INFO  : Invoking Bootgen: bootgen -image ipi_app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\ipi_app\bootimage\BOOT.bin
+10:20:01 INFO  : Creating new bif file C:\HDL_projects_git\IPI\IPI.sdk\ipi_app\bootimage\ipi_app.bif
+10:20:03 INFO  : Bootgen command execution is done.
+10:21:53 INFO  : Disconnected from the channel tcfchan#2.
+10:45:19 INFO  : Registering command handlers for SDK TCF services
+10:45:20 INFO  : Launching XSCT server: xsct.bat -interactive C:\HDL_projects_git\IPI\IPI.sdk\temp_xsdb_launch_script.tcl
+10:45:24 INFO  : XSCT server has started successfully.
+10:45:24 INFO  : Successfully done setting XSCT server connection channel  
+10:45:24 INFO  : Successfully done setting SDK workspace  
+10:45:24 INFO  : Processing command line option -hwspec C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper.hdf.
+10:45:24 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+10:45:24 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:27:17 INFO  : Invoking Bootgen: bootgen -image ipi_app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\ipi_app\bootimage\BOOT.bin -w on
+11:27:17 INFO  : Overwriting existing bif file C:\HDL_projects_git\IPI\IPI.sdk\ipi_app\bootimage\ipi_app.bif
+11:27:20 INFO  : Bootgen command execution is done.
+11:37:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:37:06 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+11:37:06 INFO  : 'jtag frequency' command is executed.
+11:37:06 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:37:06 INFO  : Context for 'APU' is selected.
+11:37:07 INFO  : System reset is completed.
+11:37:10 INFO  : 'after 3000' command is executed.
+11:37:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+11:37:14 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:37:14 INFO  : Context for 'APU' is selected.
+11:37:14 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+11:37:14 INFO  : 'configparams force-mem-access 1' command is executed.
+11:37:14 INFO  : Context for 'APU' is selected.
+11:37:14 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:37:16 INFO  : 'psu_init' command is executed.
+11:37:17 INFO  : 'after 1000' command is executed.
+11:37:17 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:37:18 INFO  : 'after 1000' command is executed.
+11:37:18 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:37:18 INFO  : 'catch {psu_protection}' command is executed.
+11:37:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:37:18 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:37:18 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:37:18 INFO  : 'configparams force-mem-access 0' command is executed.
+11:37:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/ipi_app/Debug/ipi_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:37:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:37:19 INFO  : 'con' command is executed.
+11:37:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+11:37:19 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+11:54:58 ERROR : Error generating bsp sources: Failed in generating sources
+11:54:58 ERROR : Failed to regenerate sources for BSP project ipi_app_bsp
+org.eclipse.core.runtime.CoreException: Internal error occurred while generating bsp sources. Please check the SDK Log view for further details.
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:178)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+11:55:24 INFO  : Launching XSCT server: xsct.bat -interactive C:\HDL_projects_git\IPI\IPI.sdk\temp_xsdb_launch_script.tcl
+11:55:27 INFO  : XSCT server has started successfully.
+11:55:27 INFO  : Successfully done setting XSCT server connection channel  
+11:55:27 INFO  : Successfully done setting SDK workspace  
+11:55:42 INFO  : Registering command handlers for SDK TCF services
+11:55:42 INFO  : Processing command line option -hwspec C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper.hdf.
+11:55:42 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+11:55:43 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:00:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:00:04 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:00:04 INFO  : 'jtag frequency' command is executed.
+12:00:04 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:00:04 INFO  : Context for 'APU' is selected.
+12:00:05 INFO  : System reset is completed.
+12:00:08 INFO  : 'after 3000' command is executed.
+12:00:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:00:11 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:00:11 INFO  : Context for 'APU' is selected.
+12:00:12 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:00:12 INFO  : 'configparams force-mem-access 1' command is executed.
+12:00:12 INFO  : Context for 'APU' is selected.
+12:00:12 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:00:14 INFO  : 'psu_init' command is executed.
+12:00:15 INFO  : 'after 1000' command is executed.
+12:00:15 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:00:16 INFO  : 'after 1000' command is executed.
+12:00:16 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:00:16 INFO  : 'catch {psu_protection}' command is executed.
+12:00:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:16 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:00:16 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:00:16 INFO  : 'configparams force-mem-access 0' command is executed.
+12:00:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:00:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:00:17 INFO  : 'con' command is executed.
+12:00:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:00:17 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:01:07 INFO  : Refreshed build settings on project app
+12:02:49 INFO  : Disconnected from the channel tcfchan#1.
+12:02:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:03:00 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:03:00 INFO  : 'jtag frequency' command is executed.
+12:03:00 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:03:01 INFO  : Context for 'APU' is selected.
+12:03:02 INFO  : System reset is completed.
+12:03:05 INFO  : 'after 3000' command is executed.
+12:03:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:03:08 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:03:09 INFO  : Context for 'APU' is selected.
+12:03:10 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:03:10 INFO  : 'configparams force-mem-access 1' command is executed.
+12:03:10 INFO  : Context for 'APU' is selected.
+12:03:10 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:03:11 INFO  : 'psu_init' command is executed.
+12:03:12 INFO  : 'after 1000' command is executed.
+12:03:12 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:03:13 INFO  : 'after 1000' command is executed.
+12:03:14 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:03:14 INFO  : 'catch {psu_protection}' command is executed.
+12:03:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:03:14 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:03:14 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:03:14 INFO  : 'configparams force-mem-access 0' command is executed.
+12:03:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:03:14 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:03:14 INFO  : 'con' command is executed.
+12:03:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:03:14 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:04:22 INFO  : Disconnected from the channel tcfchan#2.
+12:06:45 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\BOOT.bin
+12:06:45 INFO  : Creating new bif file C:\HDL_projects_git\IPI\IPI.sdk\app\output.bif
+12:06:47 INFO  : Bootgen command execution is done.
+12:07:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:42 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:07:42 INFO  : 'jtag frequency' command is executed.
+12:07:42 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:07:42 INFO  : Context for 'APU' is selected.
+12:07:43 INFO  : System reset is completed.
+12:07:46 INFO  : 'after 3000' command is executed.
+12:07:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:07:49 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:07:49 INFO  : Context for 'APU' is selected.
+12:07:50 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:07:50 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:50 INFO  : Context for 'APU' is selected.
+12:07:50 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:07:51 INFO  : 'psu_init' command is executed.
+12:07:53 INFO  : 'after 1000' command is executed.
+12:07:53 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:07:54 INFO  : 'after 1000' command is executed.
+12:07:54 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:07:54 INFO  : 'catch {psu_protection}' command is executed.
+12:07:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:07:54 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:07:54 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:07:54 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:54 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:07:54 INFO  : 'con' command is executed.
+12:07:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:07:54 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:09:45 INFO  : Disconnected from the channel tcfchan#3.
+12:09:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:09:56 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:09:56 INFO  : 'jtag frequency' command is executed.
+12:09:56 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:09:56 INFO  : Context for 'APU' is selected.
+12:09:57 INFO  : System reset is completed.
+12:10:00 INFO  : 'after 3000' command is executed.
+12:10:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:10:03 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:10:03 INFO  : Context for 'APU' is selected.
+12:10:03 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:10:03 INFO  : 'configparams force-mem-access 1' command is executed.
+12:10:04 INFO  : Context for 'APU' is selected.
+12:10:04 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:10:05 INFO  : 'psu_init' command is executed.
+12:10:06 INFO  : 'after 1000' command is executed.
+12:10:06 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:10:07 INFO  : 'after 1000' command is executed.
+12:10:07 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:10:07 INFO  : 'catch {psu_protection}' command is executed.
+12:10:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:10:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:10:08 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:10:08 INFO  : 'configparams force-mem-access 0' command is executed.
+12:10:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:10:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:10:08 INFO  : 'con' command is executed.
+12:10:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:10:08 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:11:36 INFO  : Refreshed build settings on project app
+12:20:14 ERROR : Data file address entered is not valid hex.
+12:20:49 INFO  : Disconnected from the channel tcfchan#4.
+12:20:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:00 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:21:00 INFO  : 'jtag frequency' command is executed.
+12:21:00 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:21:00 INFO  : Context for 'APU' is selected.
+12:21:01 INFO  : System reset is completed.
+12:21:04 INFO  : 'after 3000' command is executed.
+12:21:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:21:08 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:21:08 INFO  : Context for 'APU' is selected.
+12:21:08 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:21:08 INFO  : 'configparams force-mem-access 1' command is executed.
+12:21:08 INFO  : Context for 'APU' is selected.
+12:21:08 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:21:10 INFO  : 'psu_init' command is executed.
+12:21:11 INFO  : 'after 1000' command is executed.
+12:21:11 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:21:12 INFO  : 'after 1000' command is executed.
+12:21:12 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:21:12 INFO  : 'catch {psu_protection}' command is executed.
+12:21:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:21:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:21:13 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:21:13 INFO  : 'configparams force-mem-access 0' command is executed.
+12:21:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:21:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:21:13 INFO  : 'con' command is executed.
+12:21:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:21:13 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:24:24 INFO  : Disconnected from the channel tcfchan#5.
+12:24:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:24:36 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:24:36 INFO  : 'jtag frequency' command is executed.
+12:24:36 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:24:36 INFO  : Context for 'APU' is selected.
+12:24:37 INFO  : System reset is completed.
+12:24:40 INFO  : 'after 3000' command is executed.
+12:24:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:24:43 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:24:43 INFO  : Context for 'APU' is selected.
+12:24:43 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:24:43 INFO  : 'configparams force-mem-access 1' command is executed.
+12:24:44 INFO  : Context for 'APU' is selected.
+12:24:44 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:24:46 INFO  : 'psu_init' command is executed.
+12:24:47 INFO  : 'after 1000' command is executed.
+12:24:47 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:24:48 INFO  : 'after 1000' command is executed.
+12:24:48 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:24:48 INFO  : 'catch {psu_protection}' command is executed.
+12:24:48 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:24:48 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:24:48 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:24:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:24:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:24:48 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:24:48 INFO  : 'con' command is executed.
+12:24:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:24:48 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:26:20 INFO  : Disconnected from the channel tcfchan#6.
+12:26:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:26:32 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:26:32 INFO  : 'jtag frequency' command is executed.
+12:26:32 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:26:32 INFO  : Context for 'APU' is selected.
+12:26:33 INFO  : System reset is completed.
+12:26:36 INFO  : 'after 3000' command is executed.
+12:26:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:26:40 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:26:40 INFO  : Context for 'APU' is selected.
+12:26:40 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:26:40 INFO  : 'configparams force-mem-access 1' command is executed.
+12:26:40 INFO  : Context for 'APU' is selected.
+12:26:40 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:26:42 INFO  : 'psu_init' command is executed.
+12:26:43 INFO  : 'after 1000' command is executed.
+12:26:43 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:26:44 INFO  : 'after 1000' command is executed.
+12:26:44 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:26:44 INFO  : 'catch {psu_protection}' command is executed.
+12:26:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:26:44 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:26:44 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:26:44 INFO  : 'configparams force-mem-access 0' command is executed.
+12:26:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:26:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:26:45 INFO  : 'con' command is executed.
+12:26:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:26:45 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:29:42 INFO  : Disconnected from the channel tcfchan#7.
+12:29:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:29:54 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:29:54 INFO  : 'jtag frequency' command is executed.
+12:29:54 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:29:54 INFO  : Context for 'APU' is selected.
+12:29:55 INFO  : System reset is completed.
+12:29:58 INFO  : 'after 3000' command is executed.
+12:29:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:30:01 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:30:01 INFO  : Context for 'APU' is selected.
+12:30:02 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:30:02 INFO  : 'configparams force-mem-access 1' command is executed.
+12:30:02 INFO  : Context for 'APU' is selected.
+12:30:02 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:30:03 INFO  : 'psu_init' command is executed.
+12:30:04 INFO  : 'after 1000' command is executed.
+12:30:04 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:30:05 INFO  : 'after 1000' command is executed.
+12:30:06 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:30:06 INFO  : 'catch {psu_protection}' command is executed.
+12:30:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:30:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:30:06 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:30:06 INFO  : 'configparams force-mem-access 0' command is executed.
+12:30:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:30:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:30:06 INFO  : 'con' command is executed.
+12:30:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:30:06 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:31:07 INFO  : Disconnected from the channel tcfchan#8.
+12:31:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:31:19 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+12:31:19 INFO  : 'jtag frequency' command is executed.
+12:31:19 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:31:19 INFO  : Context for 'APU' is selected.
+12:31:20 INFO  : System reset is completed.
+12:31:23 INFO  : 'after 3000' command is executed.
+12:31:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+12:31:26 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:31:26 INFO  : Context for 'APU' is selected.
+12:31:27 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:31:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:31:27 INFO  : Context for 'APU' is selected.
+12:31:27 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:31:28 INFO  : 'psu_init' command is executed.
+12:31:29 INFO  : 'after 1000' command is executed.
+12:31:29 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:31:30 INFO  : 'after 1000' command is executed.
+12:31:30 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:31:30 INFO  : 'catch {psu_protection}' command is executed.
+12:31:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:31:31 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:31:31 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:31:31 INFO  : 'configparams force-mem-access 0' command is executed.
+12:31:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:31:31 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:31:31 INFO  : 'con' command is executed.
+12:31:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+12:31:31 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+12:34:26 INFO  : Disconnected from the channel tcfchan#9.
+13:04:51 INFO  : Registering command handlers for SDK TCF services
+13:04:52 INFO  : Launching XSCT server: xsct.bat -interactive C:\HDL_projects_git\IPI\IPI.sdk\temp_xsdb_launch_script.tcl
+13:04:56 INFO  : XSCT server has started successfully.
+13:04:56 INFO  : Successfully done setting XSCT server connection channel  
+13:04:56 INFO  : Successfully done setting SDK workspace  
+13:04:56 INFO  : Processing command line option -hwspec C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper.hdf.
+13:04:56 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+13:04:56 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+13:07:21 INFO  : Refreshed build settings on project app_r5
+13:10:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:10:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+13:11:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:18 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+13:11:18 INFO  : 'jtag frequency' command is executed.
+13:11:18 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+13:11:18 INFO  : Context for 'APU' is selected.
+13:11:19 INFO  : System reset is completed.
+13:11:22 INFO  : 'after 3000' command is executed.
+13:11:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+13:11:26 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:11:26 INFO  : Context for 'APU' is selected.
+13:11:26 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:11:26 INFO  : 'configparams force-mem-access 1' command is executed.
+13:11:26 INFO  : Context for 'APU' is selected.
+13:11:26 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+13:11:28 INFO  : 'psu_init' command is executed.
+13:11:28 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+13:11:29 INFO  : 'after 1000' command is executed.
+13:11:29 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+13:11:30 INFO  : 'after 1000' command is executed.
+13:11:30 INFO  : 'psu_ps_pl_reset_config' command is executed.
+13:11:30 INFO  : 'catch {psu_protection}' command is executed.
+13:11:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:11:30 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:11:30 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:11:30 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+13:11:31 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+13:11:31 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+13:11:32 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+13:11:32 INFO  : 'configparams force-mem-access 0' command is executed.
+13:11:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:11:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:11:32 INFO  : 'con' command is executed.
+13:11:32 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+13:11:32 INFO  : 'con' command is executed.
+13:11:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+13:11:32 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+13:30:37 ERROR : Interrupted exception while waiting for the completion of command ' ::hsi::utils::set_current_hw_sw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/HDL_projects_git/IPI/IPI.sdk/fsbl_bsp/system.mss '
+13:33:34 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin
+13:33:34 INFO  : Creating new bif file C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\app.bif
+13:33:37 INFO  : Bootgen command execution is done.
+13:36:12 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+13:36:14 INFO  : Bootgen command execution is done.
+13:40:31 INFO  : Refreshed build settings on project app
+13:56:48 INFO  : Disconnected from the channel tcfchan#1.
+13:56:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:59 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+13:56:59 INFO  : 'jtag frequency' command is executed.
+13:56:59 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+13:56:59 INFO  : Context for 'APU' is selected.
+13:57:00 INFO  : System reset is completed.
+13:57:03 INFO  : 'after 3000' command is executed.
+13:57:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+13:57:07 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+13:57:07 INFO  : Context for 'APU' is selected.
+13:57:07 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+13:57:07 INFO  : 'configparams force-mem-access 1' command is executed.
+13:57:07 INFO  : Context for 'APU' is selected.
+13:57:07 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+13:57:09 INFO  : 'psu_init' command is executed.
+13:57:10 INFO  : 'after 1000' command is executed.
+13:57:10 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+13:57:11 INFO  : 'after 1000' command is executed.
+13:57:11 INFO  : 'psu_ps_pl_reset_config' command is executed.
+13:57:11 INFO  : 'catch {psu_protection}' command is executed.
+13:57:11 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:57:11 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+13:57:12 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+13:57:12 INFO  : 'configparams force-mem-access 0' command is executed.
+13:57:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:57:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+13:57:12 INFO  : 'con' command is executed.
+13:57:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+13:57:12 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+14:01:07 INFO  : Disconnected from the channel tcfchan#2.
+14:01:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:01:21 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:01:21 INFO  : 'jtag frequency' command is executed.
+14:01:21 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:01:21 INFO  : Context for 'APU' is selected.
+14:01:22 INFO  : System reset is completed.
+14:01:25 INFO  : 'after 3000' command is executed.
+14:01:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:01:28 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:01:28 INFO  : Context for 'APU' is selected.
+14:01:29 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:01:29 INFO  : 'configparams force-mem-access 1' command is executed.
+14:01:29 INFO  : Context for 'APU' is selected.
+14:01:29 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:01:30 INFO  : 'psu_init' command is executed.
+14:01:31 INFO  : 'after 1000' command is executed.
+14:01:31 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+14:01:32 INFO  : 'after 1000' command is executed.
+14:01:32 INFO  : 'psu_ps_pl_reset_config' command is executed.
+14:01:32 INFO  : 'catch {psu_protection}' command is executed.
+14:01:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:01:32 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:01:33 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:01:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:01:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:01:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:01:33 INFO  : 'con' command is executed.
+14:01:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+14:01:33 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+14:09:56 INFO  : Disconnected from the channel tcfchan#3.
+14:11:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:11:20 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:11:20 INFO  : 'jtag frequency' command is executed.
+14:11:20 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:11:20 INFO  : Context for 'APU' is selected.
+14:11:21 INFO  : System reset is completed.
+14:11:24 INFO  : 'after 3000' command is executed.
+14:11:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:11:28 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:11:28 INFO  : Context for 'APU' is selected.
+14:11:28 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:11:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:11:28 INFO  : Context for 'APU' is selected.
+14:11:28 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:11:30 INFO  : 'psu_init' command is executed.
+14:11:31 INFO  : 'after 1000' command is executed.
+14:11:31 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+14:11:32 INFO  : 'after 1000' command is executed.
+14:11:32 INFO  : 'psu_ps_pl_reset_config' command is executed.
+14:11:32 INFO  : 'catch {psu_protection}' command is executed.
+14:11:32 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:11:32 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:11:33 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:11:33 INFO  : 'configparams force-mem-access 0' command is executed.
+14:11:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:11:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:11:33 INFO  : 'con' command is executed.
+14:11:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+14:11:33 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+14:15:15 INFO  : Disconnected from the channel tcfchan#4.
+14:15:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:27 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:15:27 INFO  : 'jtag frequency' command is executed.
+14:15:27 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:15:27 INFO  : Context for 'APU' is selected.
+14:15:28 INFO  : System reset is completed.
+14:15:31 INFO  : 'after 3000' command is executed.
+14:15:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:15:34 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:15:34 INFO  : Context for 'APU' is selected.
+14:15:35 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:15:35 INFO  : 'configparams force-mem-access 1' command is executed.
+14:15:35 INFO  : Context for 'APU' is selected.
+14:15:35 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:15:36 INFO  : 'psu_init' command is executed.
+14:15:37 INFO  : 'after 1000' command is executed.
+14:15:37 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+14:15:38 INFO  : 'after 1000' command is executed.
+14:15:38 INFO  : 'psu_ps_pl_reset_config' command is executed.
+14:15:38 INFO  : 'catch {psu_protection}' command is executed.
+14:15:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:15:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+14:15:39 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+14:15:39 INFO  : 'configparams force-mem-access 0' command is executed.
+14:15:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:15:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+14:15:39 INFO  : 'con' command is executed.
+14:15:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+14:15:39 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+14:23:43 INFO  : Disconnected from the channel tcfchan#5.
+14:23:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:23:45 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:23:45 INFO  : 'jtag frequency' command is executed.
+14:23:45 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:23:45 INFO  : Context for 'RPU' is selected.
+14:23:45 INFO  : Split mode is enabled for R5#1
+14:23:45 INFO  : Context for 'APU' is selected.
+14:23:55 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:23:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:23:56 INFO  : Context for 'APU' is selected.
+14:23:56 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:25:13 ERROR : 'psu_init' is cancelled.
+14:25:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+enable_split_mode
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+----------------End of Script----------------
+
+14:25:13 INFO  : Issued abort command to xsdb.
+14:25:13 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+Reason: abort
+14:25:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+14:25:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:25:21 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:25:21 INFO  : 'jtag frequency' command is executed.
+14:25:21 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:25:21 INFO  : Context for 'RPU' is selected.
+14:25:21 INFO  : Split mode is enabled for R5#1
+14:25:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:25:25 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:25:25 INFO  : Context for 'APU' is selected.
+14:25:25 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:25:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:25:25 INFO  : Context for 'APU' is selected.
+14:25:25 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:25:26 INFO  : 'psu_init' command is executed.
+14:25:26 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+14:25:27 INFO  : 'after 1000' command is executed.
+14:25:28 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+14:25:29 INFO  : 'after 1000' command is executed.
+14:25:29 INFO  : 'psu_ps_pl_reset_config' command is executed.
+14:25:29 INFO  : 'catch {psu_protection}' command is executed.
+14:25:29 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+14:25:29 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+14:25:29 INFO  : 'catch {XFsbl_TcmEccInit R5_0}' command is executed.
+14:25:29 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+14:25:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:25:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+enable_split_mode
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_0}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:25:29 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+14:25:29 INFO  : 'con' command is executed.
+14:25:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+14:25:29 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\r5_ipi.tcl'
+14:26:08 INFO  : Disconnected from the channel tcfchan#6.
+14:26:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:26:10 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+14:26:10 INFO  : 'jtag frequency' command is executed.
+14:26:10 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+14:26:10 INFO  : Context for 'RPU' is selected.
+14:26:10 INFO  : Split mode is enabled for R5#1
+14:26:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+14:26:13 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:26:13 INFO  : Context for 'APU' is selected.
+14:26:24 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:26:24 INFO  : 'configparams force-mem-access 1' command is executed.
+14:26:24 INFO  : Context for 'APU' is selected.
+14:26:24 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+14:26:26 INFO  : 'psu_init' command is executed.
+14:26:26 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+14:26:27 INFO  : 'after 1000' command is executed.
+14:26:27 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+14:26:28 INFO  : 'after 1000' command is executed.
+14:26:28 INFO  : 'psu_ps_pl_reset_config' command is executed.
+14:26:28 INFO  : 'catch {psu_protection}' command is executed.
+14:26:28 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+14:26:28 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+14:26:28 INFO  : 'catch {XFsbl_TcmEccInit R5_0}' command is executed.
+14:26:28 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+14:26:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:26:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+enable_split_mode
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_0}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:26:29 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+14:26:29 INFO  : 'con' command is executed.
+14:26:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+14:26:29 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\r5_ipi.tcl'
+15:12:47 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+15:12:50 INFO  : Bootgen command execution is done.
+15:20:06 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+15:20:08 INFO  : Bootgen command execution is done.
+16:49:07 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+16:49:10 INFO  : Bootgen command execution is done.
+17:00:03 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+17:00:05 INFO  : Bootgen command execution is done.
+17:06:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:06:54 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:06:54 INFO  : 'jtag frequency' command is executed.
+17:06:54 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:06:54 INFO  : Context for 'APU' is selected.
+17:06:55 INFO  : System reset is completed.
+17:06:58 INFO  : 'after 3000' command is executed.
+17:06:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+17:07:02 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:07:02 INFO  : Context for 'APU' is selected.
+17:07:02 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:07:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:07:02 INFO  : Context for 'APU' is selected.
+17:07:02 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:07:04 INFO  : 'psu_init' command is executed.
+17:07:05 INFO  : 'after 1000' command is executed.
+17:07:05 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:07:06 INFO  : 'after 1000' command is executed.
+17:07:06 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:07:06 INFO  : 'catch {psu_protection}' command is executed.
+17:07:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:07:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:07:08 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:07:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:07:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:07:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:07:08 INFO  : 'con' command is executed.
+17:07:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+17:07:08 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\a53_ipi.tcl'
+17:17:17 INFO  : Disconnected from the channel tcfchan#7.
+17:17:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:17:29 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:17:29 INFO  : 'jtag frequency' command is executed.
+17:17:29 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:17:29 INFO  : Context for 'APU' is selected.
+17:17:30 INFO  : System reset is completed.
+17:17:33 INFO  : 'after 3000' command is executed.
+17:17:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+17:17:36 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:17:36 INFO  : Context for 'APU' is selected.
+17:17:37 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:17:37 INFO  : 'configparams force-mem-access 1' command is executed.
+17:17:37 INFO  : Context for 'APU' is selected.
+17:17:37 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:17:38 INFO  : 'psu_init' command is executed.
+17:17:38 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+17:17:39 INFO  : 'after 1000' command is executed.
+17:17:39 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:17:40 INFO  : 'after 1000' command is executed.
+17:17:41 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:17:41 INFO  : 'catch {psu_protection}' command is executed.
+17:17:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:17:41 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:17:43 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:17:43 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:17:45 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+17:17:45 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+17:17:45 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+17:17:45 INFO  : 'configparams force-mem-access 0' command is executed.
+17:17:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:17:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:17:45 INFO  : 'con' command is executed.
+17:17:45 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:17:45 INFO  : 'con' command is executed.
+17:17:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+17:17:45 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\a53_ipi.tcl'
+17:18:46 INFO  : Disconnected from the channel tcfchan#8.
+17:18:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:10 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:19:11 INFO  : 'jtag frequency' command is executed.
+17:19:11 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:19:12 INFO  : Context for 'APU' is selected.
+17:19:13 ERROR : AP transaction timeout
+17:19:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:19:26 WARN  : channel "tcfchan#7" closed
+17:19:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:19:28 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:19:28 INFO  : 'jtag frequency' command is executed.
+17:19:28 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:19:28 INFO  : Context for 'APU' is selected.
+17:19:28 INFO  : System reset is completed.
+17:19:31 INFO  : 'after 3000' command is executed.
+17:19:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+17:19:35 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:19:35 INFO  : Context for 'APU' is selected.
+17:19:35 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:19:35 INFO  : 'configparams force-mem-access 1' command is executed.
+17:19:35 INFO  : Context for 'APU' is selected.
+17:19:35 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:19:37 INFO  : 'psu_init' command is executed.
+17:19:37 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+17:19:38 INFO  : 'after 1000' command is executed.
+17:19:38 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:19:39 INFO  : 'after 1000' command is executed.
+17:19:39 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:19:39 INFO  : 'catch {psu_protection}' command is executed.
+17:19:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:19:39 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:19:39 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:19:40 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:19:40 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+17:19:40 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+17:19:41 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+17:19:41 INFO  : 'configparams force-mem-access 0' command is executed.
+17:19:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:19:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:19:41 INFO  : 'con' command is executed.
+17:19:41 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:19:41 INFO  : 'con' command is executed.
+17:19:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+17:19:41 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\a53_ipi.tcl'
+17:20:34 INFO  : Disconnected from the channel tcfchan#9.
+17:20:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:20:49 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:20:49 INFO  : 'jtag frequency' command is executed.
+17:20:49 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:20:50 INFO  : Context for 'APU' is selected.
+17:20:51 ERROR : AP transaction timeout
+17:20:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:28:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:59 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:29:00 INFO  : 'jtag frequency' command is executed.
+17:29:00 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:29:00 INFO  : Context for 'APU' is selected.
+17:29:01 ERROR : AP transaction timeout
+17:29:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:29:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:23 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:29:23 INFO  : 'jtag frequency' command is executed.
+17:29:23 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:29:23 INFO  : Context for 'APU' is selected.
+17:29:23 INFO  : System reset is completed.
+17:29:26 INFO  : 'after 3000' command is executed.
+17:29:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+17:29:30 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:29:30 INFO  : Context for 'APU' is selected.
+17:29:30 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:29:30 INFO  : 'configparams force-mem-access 1' command is executed.
+17:29:30 INFO  : Context for 'APU' is selected.
+17:29:30 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:29:32 INFO  : 'psu_init' command is executed.
+17:29:32 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+17:29:33 INFO  : 'after 1000' command is executed.
+17:29:33 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:29:34 INFO  : 'after 1000' command is executed.
+17:29:34 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:29:34 INFO  : 'catch {psu_protection}' command is executed.
+17:29:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:29:35 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:29:35 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:29:36 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+17:29:36 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+17:29:36 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+17:29:36 INFO  : 'configparams force-mem-access 0' command is executed.
+17:29:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:29:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:29:36 INFO  : 'con' command is executed.
+17:29:36 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:29:37 INFO  : 'con' command is executed.
+17:29:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+17:29:37 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\a53_ipi.tcl'
+17:31:03 INFO  : Disconnected from the channel tcfchan#10.
+17:31:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:31:14 INFO  : Jtag cable 'Avnet USB-to-JTAG/UART Pod V1 1234-oj1A' is selected.
+17:31:14 INFO  : 'jtag frequency' command is executed.
+17:31:14 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl' is done.
+17:31:14 INFO  : Context for 'APU' is selected.
+17:31:15 INFO  : System reset is completed.
+17:31:18 INFO  : 'after 3000' command is executed.
+17:31:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0' command is executed.
+17:31:21 INFO  : FPGA configured successfully with bitstream "C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:31:21 INFO  : Context for 'APU' is selected.
+17:31:22 INFO  : Hardware design information is loaded from 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:31:22 INFO  : 'configparams force-mem-access 1' command is executed.
+17:31:22 INFO  : Context for 'APU' is selected.
+17:31:22 INFO  : Sourcing of 'C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+17:31:23 INFO  : 'psu_init' command is executed.
+17:31:23 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl' is done.
+17:31:24 INFO  : 'after 1000' command is executed.
+17:31:25 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+17:31:26 INFO  : 'after 1000' command is executed.
+17:31:26 INFO  : 'psu_ps_pl_reset_config' command is executed.
+17:31:26 INFO  : 'catch {psu_protection}' command is executed.
+17:31:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:31:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+17:31:26 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf' is downloaded to processor 'psu_cortexa53_0'.
+17:31:26 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:31:27 INFO  : Processor reset is completed for 'psu_cortexr5_0'.
+17:31:27 INFO  : 'catch {XFsbl_TcmEccInit R5_L}' command is executed.
+17:31:27 INFO  : The application 'C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf' is downloaded to processor 'psu_cortexr5_0'.
+17:31:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:31:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A" && level==0} -index 0
+fpga -file C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+loadhw -hw C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+source C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.2/scripts/sdk/util/fsbl.tcl
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+dow C:/HDL_projects_git/IPI/IPI.sdk/app/Debug/app.elf
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+rst -processor
+catch {XFsbl_TcmEccInit R5_L}
+dow C:/HDL_projects_git/IPI/IPI.sdk/app_r5/Debug/app_r5.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:31:28 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+17:31:28 INFO  : 'con' command is executed.
+17:31:28 INFO  : Context for processor 'psu_cortexr5_0' is selected.
+17:31:28 INFO  : 'con' command is executed.
+17:31:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+targets -set -nocase -filter {name =~"*R5*0" && jtag_cable_name =~ "Avnet USB-to-JTAG/UART Pod V1 1234-oj1A"} -index 1
+con
+----------------End of Script----------------
+
+17:31:28 INFO  : Launch script is exported to file 'C:\HDL_projects_git\IPI\IPI.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\a53_ipi.tcl'
+17:36:10 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+17:36:13 INFO  : Bootgen command execution is done.
+17:42:01 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+17:42:03 INFO  : Bootgen command execution is done.
+17:48:29 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+17:48:33 INFO  : Bootgen command execution is done.
+17:54:16 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+17:54:18 INFO  : Bootgen command execution is done.
+18:17:50 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+18:17:52 INFO  : Bootgen command execution is done.
+19:09:32 INFO  : Invoking Bootgen: bootgen -image app.bif -arch zynqmp -o C:\HDL_projects_git\IPI\IPI.sdk\app\bootimage\BOOT.bin -w on
+19:09:34 INFO  : Bootgen command execution is done.
+19:59:29 INFO  : Disconnected from the channel tcfchan#11.
+21:04:22 INFO  : Registering command handlers for SDK TCF services
+21:04:23 INFO  : Launching XSCT server: xsct.bat -interactive C:\HDL_projects_git\IPI\IPI.sdk\temp_xsdb_launch_script.tcl
+21:04:27 INFO  : XSCT server has started successfully.
+21:04:30 INFO  : Successfully done setting XSCT server connection channel  
+21:04:30 INFO  : Processing command line option -hwspec C:/HDL_projects_git/IPI/IPI.sdk/design_1_wrapper.hdf.
+21:04:30 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+21:04:30 INFO  : Successfully done setting SDK workspace  
+21:04:30 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.

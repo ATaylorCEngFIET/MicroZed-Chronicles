@@ -1,0 +1,27 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xil_exception.h"
+#include "xil_cache.h"
+#include "xscugic.h"
+#include "xipipsu.h"
+#include "xipipsu_hw.h"
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+
+
+    while(1){
+    	usleep(1000000);
+    	print("Hello World\n\r");
+    }
+
+    cleanup_platform();
+    return 0;
+}

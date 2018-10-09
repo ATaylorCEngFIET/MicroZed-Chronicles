@@ -1,0 +1,4 @@
+THIRPARTY=false
+HW_PROJECT_REFERENCE=design_1_wrapper_hw_platform_0
+PROCESSOR=psu_cortexa53_0
+MSS_FILE=system.mss

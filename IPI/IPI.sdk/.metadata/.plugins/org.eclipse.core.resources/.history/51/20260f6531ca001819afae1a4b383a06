@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World r5\n\r");
+
+    while(1){
+    	usleep(500000);
+    	print("Hello World r5\n\r");
+    }
+
+    cleanup_platform();
+    return 0;
+}

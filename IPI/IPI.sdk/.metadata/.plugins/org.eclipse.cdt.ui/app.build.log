@@ -1,0 +1,29 @@
+19:09:23 **** Incremental Build of configuration Debug for project app ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../app_bsp/psu_cortexa53_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'DoIpiTest':
+../src/helloworld.c:135:18: warning: variable 'DestCfgPtr' set but not used [-Wunused-but-set-variable]
+  XIpiPsu_Config *DestCfgPtr;
+                  ^~~~~~~~~~
+../src/helloworld.c: At top level:
+../src/helloworld.c:31:13: warning: 'InvertBuffer' declared 'static' but never defined [-Wunused-function]
+ static void InvertBuffer(u32 *BufPtr,u32 MsgLen);
+             ^~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: app.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../app_bsp/psu_cortexa53_0/lib -o "app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: app.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size app.elf  |tee "app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40572	   5576	  20824	  66972	  1059c	app.elf
+Finished building: app.elf.size
+ 
+
+19:09:24 Build Finished (took 1s.44ms)
+
